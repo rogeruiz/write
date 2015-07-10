@@ -56,15 +56,31 @@ module Jekyll
 
     #
     # Transpile any .esnext files found the _babel directory
+    # @param {String} source The contents of the js/main.esnext
+    # @param {Object} options The options to pass into Babel
+    # @returns {String} The code to put into the contents of main.js
     #
     def transpile( source, options )
-      code = []
+      # Prepare a list for all the compiled code.
+      codes = []
       dir = @config[ 'babel' ][ 'source' ]
+
+      # Have Babel process all the code in the source directory and push it to
+      # the `codes`.
       @files.each do |x|
-        code.push( Babel::Transpiler.transform( "#{ dir }/#{ x }", options ) )
+        # Update the filename option for each file found
+        sub_options = options.merge( { 'filename' => x.match( /^(\w+)\.esnext/i )[ 1 ] } )
+        codes.push(
+          Babel::Transpiler.transform(
+            File.read( "#{ dir }/#{ x }" ),
+            sub_options
+          )
+        )
       end
-      code.push( Babel::Transpiler.transform( source, options ) )
-      puts code
+
+      # Process the source file last and push it into the `codes` array.
+      codes.push( Babel::Transpiler.transform( source, options ) )
+      codes.reduce( "\n" ) { |m, c| m + c[ 'code' ] + "\n\n" }
     end
 
   end
