@@ -1,0 +1,23 @@
+# Jekyll files
+_site
+.jekyll-metadata
+
+# Compass / Sass files
+.sass-cache
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+.svn
+.idea
+
+# Dropbox files
+.dropbox
+Icon*
+
+# Adobe Asset files
+*.psd
+*.ai
+*.indd/vendor/

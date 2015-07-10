@@ -1,0 +1,10 @@
+---
+ # Entry point for source files
+---
+
+import example from 'example';
+
+export default function() {
+  example();
+}
+

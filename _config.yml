@@ -1,0 +1,30 @@
+# Site settings
+#
+title: Roger is a client-side web engineer.
+email: hi@rog.gr
+description: > # this means to ignore newlines until "baseurl:"
+  Hello, I'm Roger and I'm a self-taught software engineer with a big passion for
+  JavaScript and client-side interactions. Software should always be a pleasure to
+  use.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://rog.gr" # the base hostname & protocol for your site
+twitter_username: rogeruiz
+github_username: rogeruiz
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      categories: "blog"
+
+# Build settings
+#
+markdown: redcarpet
+
+# Babel support
+#
+babel:
+  source: _babel
+
