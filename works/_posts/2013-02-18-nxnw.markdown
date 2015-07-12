@@ -1,0 +1,23 @@
+---
+layout: post
+title: "North By Northwest"
+date: "2013-06-18 22:14:00 -0400"
+permalink: /works/nxnw
+categories: [works]
+---
+
+<a href="http://rogeruiz.com/northwest-recommendations" target="_blank"><strong>tl;dr:</strong></a> HTML, CSS, JS, Design
+
+![North By Northwest Desktop](/img/works/nxnw-desktop.png)
+![North By Northwest Mobile](/img/works/nxnw-mobile.png)
+
+I like to vacation in the Pacific Northwest from time-to-time. There is something
+in the air out there, and being 30-40 minutes away from a national park is a real
+treat. When I wasn't looking for nature, the bars and nightlife were pretty cool
+there too.
+
+I made a list of places I recommend checking out if you are more interested in the
+nightlife.
+
+This project was also my first foray into UX for hidden mobile navigations. The
+idea here was to create a mobile navigation that worked like native design patterns.

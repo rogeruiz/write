@@ -6,9 +6,9 @@ permalink: /works/acuity-elm
 categories: [works]
 ---
 
-![Acuity ELM Site](/img/works/acuity-elm.gif)
-
 <a href="http://acuityelm.com" rel="nofollow" target="_blank"><strong>tl;dr:</strong></a> PHP, WordPress, Gulp, Sass, CSS3, oEmbed, ES2015, QUnit, Bash, ffmpeg
+
+![Acuity ELM Site](/img/works/acuity-elm.gif)
 
 Heavy use of the flexible box-model allowed for this website to have a fully-
 responsive experience which looks great at any size. Custom post types allowed

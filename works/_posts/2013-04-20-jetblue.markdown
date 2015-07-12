@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Jetblue"
+date: "2013-04-20 12:46:50 -0400"
+permalink: /works/jetblue
+categories: [works]
+---
+
+<a href="http://jetblue.com" rel="nofollow" target="_blank"><strong>tl;dr:</strong></a> HTML, CSS, JS, RequireJS
+
+![JetBlue Homepage](/img/works/jetblue.jpg)
+
+In 2011, JetBlue made Rokkan Agency of Record (AOR). As the AOR, we had to
+redesign their main website. Since then, I've worked both as a part of a team
+and as project lead in the development of the booking engine, TrueBlue redesign,
+and the recently launched TrueBlue Family Pooling point-sharing program.
+
+This project had me cut my teeth on a lot of new techniques. Over the course of
+1.5 years and 795 commits, I've learn a lot about working with off-shore teams,
+jQuery UI, Compass project integration, and RequireJS.
+
+This was one of my first projects as a newly hired junior developer at Rokkan.
+I owe a lot to the technical director at the time, Andrew. He was a really great
+mentor and everything I learned have lead me to learn more and more about web
+development and writing software for people with people.
