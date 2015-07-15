@@ -6,6 +6,8 @@
 #
 ##
 
+require 'babel/transpiler'
+
 module Jekyll
 
   class ESNext < Converter
@@ -13,30 +15,8 @@ module Jekyll
     safe true
     priority :low
 
-    def setup
-      return if @has_run
-
-      require 'babel/transpiler'
-
-      dir = @config[ 'babel' ][ 'source' ]
-      @files = Dir.foreach( dir ).select { |f| File.file? "#{ dir }/#{ f }" }
-
-      @options = {}
-      @options[ 'filename' ] = 'main'
-      @options[ 'modules' ] = 'amd'
-      @options[ 'moduleIds' ] = true
-
-      @has_run = true
-
-    rescue LoadError
-
-      STDERR.puts 'Babel not installed'
-      raise FatalExecption.new( 'Missing gem: Babel' )
-
-    end
-
     def matches( ext )
-      ext =~ /^\.esnext/i
+      ext =~ /^\.js/i
     end
 
     def output_ext( ext )
@@ -45,8 +25,7 @@ module Jekyll
 
     def convert( content )
       begin
-        setup
-        transpile content, @options
+        transpile content
       rescue => e
         puts "Babel Exception: #{ e.message }"
       end
@@ -55,32 +34,37 @@ module Jekyll
     private
 
     #
-    # Transpile any .esnext files found the _babel directory
+    # Transpile any .js files found the _babel directory that are referenced by
+    # the main.js file
     # @param {String} source The contents of the js/main.esnext
-    # @param {Object} options The options to pass into Babel
     # @returns {String} The code to put into the contents of main.js
     #
-    def transpile( source, options )
-      # Prepare a list for all the compiled code.
-      codes = []
-      dir = @config[ 'babel' ][ 'source' ]
+    def transpile( source )
+      options = {
+        'modules' => 'umd',
+      }
+      files = []
 
-      # Have Babel process all the code in the source directory and push it to
-      # the `codes`.
-      @files.each do |x|
-        # Update the filename option for each file found
-        sub_options = options.merge( { 'filename' => x.match( /^(\w+)\.esnext/i )[ 1 ] } )
-        codes.push(
-          Babel::Transpiler.transform(
-            File.read( "#{ dir }/#{ x }" ),
-            sub_options
-          )
-        )
+      Dir.glob( '_esnext/**/*.js' ) do | js |
+
+        if File.file? js
+
+          options[ 'filename' ] = js.gsub( /_esnext\/|\.js/, '' )
+
+          js = Babel::Transpiler.transform( File.read( js ), options )
+
+          files.push js[ 'code' ]
+
+        end
+
       end
 
-      # Process the source file last and push it into the `codes` array.
-      codes.push( Babel::Transpiler.transform( source, options ) )
-      codes.reduce( "\n" ) { |m, c| m + c[ 'code' ] + "\n\n" }
+
+      options[ 'filename' ] = 'main'
+      main_code = Babel::Transpiler.transform( source, options )
+      files.push main_code[ 'code' ]
+
+      files.join "\n"
     end
 
   end

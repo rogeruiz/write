@@ -1,10 +1,5 @@
----
- # Entry point for source files
----
-
 import example from 'example';
 
 export default function() {
-  example();
+  console.log( `start-app ${ example() }` );
 }
-
