@@ -1,10 +1,8 @@
-##
 #
-# BabelJS Jekyll convertor
+# BabelJS Jekyll Convertor
 # Easily include ES2015 and ES2016 code into your Jekyll site without relying on
-# anything but Ruby.
+# anything but Ruby and the Babel Ruby Bridge.
 #
-##
 
 require 'babel/transpiler'
 
