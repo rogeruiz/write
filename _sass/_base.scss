@@ -14,12 +14,12 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
+    font-family: $ff-merriweather;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
+    color: $cl-text;
+    background-color: $cl-main;
     -webkit-text-size-adjust: 100%;
 }
 

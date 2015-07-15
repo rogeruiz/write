@@ -12,10 +12,17 @@
 
 .site-title {
     font-size: 26px;
-    line-height: 56px;
+    line-height: 2.153846154;
     letter-spacing: -1px;
+    margin-top: 0;
     margin-bottom: 0;
     float: left;
+
+    @include media-query( 736px ) {
+      font-size: 20px;
+      line-height: 2;
+      margin-top: 10px;
+    }
 
     &,
     &:visited {

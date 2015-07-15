@@ -6,6 +6,30 @@
 
 
 // Our variables
+$ff-merriweather: 'Merriweather', serif;
+$ff-lato: 'Lato', serif;
+
+
+$cl-text: #3F4040;
+$cl-link: #7F7F7F;
+$cl-link-hover: #3F4040;
+$cl-main: #FEFFFF;
+$cl-secondary-left: #D1E2E8;
+$cl-tertiary-left: #E5F2FF;
+$cl-secondary-right: #D1E8E1;
+$cl-tertiary-right: #E5FFF1;
+$cl-tldr: darken($cl-secondary-left, 50%);
+$cl-quote: darken($cl-tertiary-left, 50%);
+
+$mq-sml--min: 440px;
+$mq-sml--max: 440px;
+$mq-med--min: 900px;
+$mq-med--max: 440px;
+$mq-lrg--min: 440px;
+$mq-lrg--max: 440px;
+$mq-xlg--min: 440px;
+$mq-xlg--max: 440px;
+
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
