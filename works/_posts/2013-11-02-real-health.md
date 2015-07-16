@@ -2,7 +2,6 @@
 layout: post
 title: "Real Health"
 date: "2013-11-02 13:00:00 -0400"
-permalink: /works/real-health
 categories: [works]
 ---
 

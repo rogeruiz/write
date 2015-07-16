@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-permalink: /about/
 ---
 
 I am web engineer specializing in client-side code. I find that there are many

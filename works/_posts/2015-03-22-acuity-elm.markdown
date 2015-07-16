@@ -2,7 +2,6 @@
 layout: post
 title: "Acuity ELM"
 date: "2015-03-22 17:00:00 -0400"
-permalink: /works/acuity-elm
 categories: [works]
 ---
 

@@ -2,7 +2,6 @@
 layout: post
 title: "The Scene"
 date: "2014-06-10 22:14:00 -0400"
-permalink: /works/the-scene
 categories: [works]
 ---
 

@@ -2,7 +2,6 @@
 layout: post
 title: "Jetblue"
 date: "2013-04-20 12:46:50 -0400"
-permalink: /works/jetblue
 categories: [works]
 ---
 

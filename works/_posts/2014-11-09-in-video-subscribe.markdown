@@ -2,7 +2,6 @@
 layout: post
 title: "In-Video Subscribe"
 date: "2014-11-09 22:14:00 -0400"
-permalink: /works/in-video-subscribe
 categories: [works]
 ---
 

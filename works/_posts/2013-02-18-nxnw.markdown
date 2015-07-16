@@ -2,7 +2,6 @@
 layout: post
 title: "North By Northwest"
 date: "2013-06-18 22:14:00 -0400"
-permalink: /works/nxnw
 categories: [works]
 ---
 
