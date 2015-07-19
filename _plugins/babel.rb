@@ -43,7 +43,7 @@ module Jekyll
       }
       files = []
 
-      Dir.glob( '_esnext/**/*.js' ) do | js |
+      Dir.glob( '_esnext/**/*.js' ).sort.each do | js |
 
         if File.file? js
 
