@@ -1,5 +1,17 @@
-import example from 'example';
+import embeds from 'embeds';
 
 export default function() {
-  console.log( `start-app ${ example() }` );
+
+  embeds.registerEmbedElements();
+
+  if ( window.addEventListener ) {
+
+    window.addEventListener( 'resize', function() {
+
+      embeds.resizeEmbedElements();
+
+    } );
+
+  }
+
 }
