@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Dress Code: Lessons in Code Pairing"
+title: "Lessons in Code Pairing"
 date: "2014-12-01 23:00:29 -0400"
 ---
-
 
 If you use Sublime Text as your editor, you may have mucked around with your
 user preferences. As someone who loves to customize my tools, I have all sort of

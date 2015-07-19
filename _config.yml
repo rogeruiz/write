@@ -19,7 +19,22 @@ defaults:
       path: ""
       type: "posts"
     values:
-      categories: "blog"
+      categories: [ "writing" ]
+      permalink: /writing/:title.html
+  -
+    scope:
+      path: "dress-code"
+      type: "posts"
+    values:
+      categories: [ "writing", "dress-code" ]
+      permalink: /dress-code/:title.html
+  -
+    scope:
+      path: "works"
+      type: "posts"
+    values:
+      categories: [ "works" ]
+      permalink: /works/:title.html
 
 # Build settings
 #
