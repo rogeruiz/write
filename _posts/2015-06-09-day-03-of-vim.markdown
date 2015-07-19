@@ -1,0 +1,7 @@
+---
+layout: vim
+title: "28 Days of Vim: Day 3"
+date: "2015-06-09 06:00:00 -0400"
+permalink: /writing/vim/:title.html
+---
+
