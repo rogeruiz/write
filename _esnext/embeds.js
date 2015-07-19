@@ -2,7 +2,7 @@ const YT_PATTERN = /^https?:\/\/www.youtube.com/i;
 
 const YT_CLASS_NAME = 'js-yt-embed';
 
-export default {
+let embeds = {
 
   youtubeElements: undefined,
 
@@ -56,4 +56,6 @@ export default {
 
   },
 
-}
+};
+
+export default embeds;
