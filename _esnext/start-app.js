@@ -1,4 +1,4 @@
-import embeds from 'embeds';
+import embeds from 'video';
 
 export default function() {
 

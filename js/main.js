@@ -1,7 +1,8 @@
 ---
-# Entry point for babel files
+# Kick off start-app
 ---
 
 ( function( global ) {
-  global.startApp();
+  require( 'start-app' )();
 } )( window );
+

@@ -42,6 +42,7 @@ module Jekyll
       babel = @config[ 'babel' ]
       options = {
         'modules' => babel[ 'modules' ],
+        'moduleIds' => true,
       }
       files = []
 
@@ -60,7 +61,9 @@ module Jekyll
       end
 
 
-      options[ 'filename' ] = 'main'
+      options[ 'filename' ] = nil
+      options[ 'modules' ] = 'ignore'
+      options[ 'moduleIds' ] = false;
       main_code = Babel::Transpiler.transform( source, options )
       files.push main_code[ 'code' ]
 
