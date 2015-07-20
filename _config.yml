@@ -46,3 +46,4 @@ babel:
   source: "_esnext"
   modules: "amd"
 
+googleanalytics: "UA-44442010-1"
