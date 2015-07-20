@@ -43,5 +43,6 @@ markdown: redcarpet
 # Babel support
 #
 babel:
-  source: _babel
+  source: "_esnext"
+  modules: "amd"
 

@@ -38,16 +38,18 @@ module Jekyll
     # @returns {String} The code to put into the contents of main.js
     #
     def transpile( source )
+
+      babel = @config[ 'babel' ]
       options = {
-        'modules' => 'umd',
+        'modules' => babel[ 'modules' ],
       }
       files = []
 
-      Dir.glob( '_esnext/**/*.js' ).sort.each do | js |
+      Dir.glob( babel[ 'source' ] + '/**/*.js' ).sort.each do | js |
 
         if File.file? js
 
-          options[ 'filename' ] = js.gsub( /_esnext\/|\.js/, '' )
+          options[ 'filename' ] = js.gsub( /^_.*\/|\.js/, '' )
 
           js = Babel::Transpiler.transform( File.read( js ), options )
 
@@ -63,6 +65,7 @@ module Jekyll
       files.push main_code[ 'code' ]
 
       files.join "\n"
+
     end
 
   end
