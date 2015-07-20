@@ -2,8 +2,9 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    background: $cl-tertiary-left;
+    border-top: 5px solid $cl-tertiary-right;
+    border-bottom: 1px solid $cl-tertiary-right;;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -11,23 +12,29 @@
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 2.153846154;
-    letter-spacing: -1px;
-    margin-top: 0;
-    margin-bottom: 0;
-    float: left;
 
-    @include media-query( 736px ) {
-      font-size: 20px;
-      line-height: 2;
-      margin-top: 10px;
-    }
+  font-family: $ff-lato;
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+  font-size: 26px;
+  line-height: 2.153846154;
+  letter-spacing: -1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  float: left;
+
+  @include media-query( 736px ) {
+    font-size: 16px;
+    line-height: 2.5;
+    margin-top: 10px;
+  }
+
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .site-nav {
@@ -39,6 +46,8 @@
     }
 
     .page-link {
+        font-family: $ff-lato;
+        text-transform: uppercase;
         color: $text-color;
         line-height: $base-line-height;
 
@@ -52,8 +61,8 @@
         position: absolute;
         top: 9px;
         right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
+        background-color: $cl-main;
+        border: 1px solid $cl-tertiary-left;
         border-radius: 5px;
         text-align: right;
 
@@ -71,7 +80,7 @@
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: $cl-tertiary-left;
                 }
             }
         }
@@ -94,12 +103,17 @@
 }
 
 
+.description {
+  font-size: 14px;
+  width: 60%;
+  margin-left: 30%;
+}
+
 
 /**
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
@@ -205,13 +219,16 @@
 }
 
 .post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
+  font-family: $ff-lato;
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1.25;
+  font-weight: 900;
+  text-transform: uppercase;
 
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+  @include media-query($on-laptop) {
+    font-size: 22px;
+  }
 }
 
 .post-content {
