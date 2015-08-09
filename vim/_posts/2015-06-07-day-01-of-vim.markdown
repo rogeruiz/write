@@ -4,3 +4,35 @@ title: "28 Days of Vim: Day 1"
 date: "2015-06-07 06:00:00 -0400"
 permalink: /writing/vim/:title.html
 ---
+
+My configuration of Sublime Text 3 is slowly dying. Over the course of being
+used as my workhorse editor, I have installed way too many plugins into the
+thing to keep it useful.
+
+I am also getting bored of using it. Vim has always eluded me as a
+choice as an editor. I have been intrigued so many times, and when I do
+not have a choice, mostly when ssh'd in, it is something I look forward
+to using.
+
+This time, I am going to use Vim to manage my day to day code-editing.
+
+> "Godspeed, dude."
+
+#### The Catalyst and The Tinder
+
+If I am going to do anything I am going to do it _right_. Some of my favorite
+things about using a GUI editor are:
+
+* That I can leave it open for days.
+  * With multiple projects.
+    * Across multiple quit sessions thanks to Mac OS Lion's update.
+
+Yet, whenever I use the terminal, I am always at the mercy of the terminal's
+PID. I do not want my editor to be at that same mercy. I only have experience
+with Screen, but I have heard that Tmux is good so I am going to be using it
+instead.
+
+Now, this would not be fun without a little script. I am going to create a
+Tmux & Vim wrapper for my terminal sessions that way I can also use the
+session's attach and detach events to track my session's time. This is going to
+help me manage my time a little better.
