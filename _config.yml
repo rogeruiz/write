@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   JavaScript and client-side interactions. Software should always be a pleasure to
   use.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://rog.gr" # the base hostname & protocol for your site
+url: "http://write.rog.gr" # the base hostname & protocol for your site
 twitter_username: rogeruiz
 github_username: rogeruiz
 
