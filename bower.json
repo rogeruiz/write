@@ -1,0 +1,32 @@
+{
+  "name": "write.rog.gr",
+  "version": "1.0.0",
+  "homepage": "http://write.rog.gr",
+  "authors": [
+    "Roger Steve Ruiz <hi@rog.gr>"
+  ],
+  "description": "Personal Jekyll-based internet-thing collection",
+  "main": "_site/index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "jekyll",
+    "portfolio",
+    "simple",
+    "gh-pages"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.2",
+    "requirejs": "~2.2.0"
+  }
+}

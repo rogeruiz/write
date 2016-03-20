@@ -20,6 +20,9 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE.md
 
+include:
+  - bower_components/
+
 defaults:
   -
     scope:
