@@ -11,7 +11,7 @@ url: "http://write.rog.gr" # the base hostname & protocol for your site
 twitter_username: rogeruiz
 github_username: rogeruiz
 
-permalink: /:title
+permalink: /:title.html
 
 exclude:
   - Gemfile
@@ -27,18 +27,18 @@ defaults:
       type: "posts"
     values:
       categories: [ "writing" ]
-      permalink: /writing/:title
+      permalink: /writing/:title.html
   -
     scope:
       path: "dress-code"
       type: "posts"
     values:
       categories: [ "writing", "dress-code" ]
-      permalink: /dress-code/:title
+      permalink: /dress-code/:title.html
   -
     scope:
       path: "works"
       type: "posts"
     values:
       categories: [ "works" ]
-      permalink: /works/:title
+      permalink: /works/:title.html

@@ -7,8 +7,8 @@ categories: [works]
 
 <a href="http://rogeruiz.com/northwest-recommendations" target="_blank"><strong>tl;dr:</strong></a> HTML, CSS, JS, Design
 
-![North By Northwest Desktop](/img/works/nxnw-desktop.png)
-![North By Northwest Mobile](/img/works/nxnw-mobile.png)
+![Desktop Screenshot](/img/works/nxnw-desktop.png "North By Northwest Desktop")
+![Mobile Screenshot](/img/works/nxnw-mobile.png "North By Northwest Mobile")
 
 I like to vacation in the Pacific Northwest from time-to-time. There is something
 in the air out there, and being 30-40 minutes away from a national park is a real

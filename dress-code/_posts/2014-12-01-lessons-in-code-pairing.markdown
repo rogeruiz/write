@@ -62,6 +62,6 @@ Now that your preferences are under version control, switching your editor is
 simple. Just make a branch with the updated changes. And you've created an
 "environment" for you to easily switch to and from when code-pairing.
 
-![Switching branches from code-review to master](/img/dress-code/code-pairing.gif)
+![Animated Example](/img/dress-code/code-pairing.gif "Switching branches from code-review to master")
 
 > tl;dr: Control your environment by using version control.

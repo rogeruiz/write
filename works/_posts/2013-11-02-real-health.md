@@ -7,7 +7,7 @@ categories: [works]
 
 <a href="http://real-health.com" rel="nofollow" target="_blank"><strong>tl;dr:</strong></a> HTML, CSS, JS, Twig, PHP, NodeJS
 
-![Real Health Homepage](/img/works/real-health.jpg)
+![Desktop Screenshot](/img/works/real-health.jpg "Real Health Homepage")
 
 Finding information on the ACA is difficult. This website helps by presenting a
 personal perspective about health insurance. Early on in the project, I helped

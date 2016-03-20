@@ -7,7 +7,7 @@ categories: [works]
 
 <a href="https://thescene.com" rel="nofollow" target="_blank"><strong>tl;dr:</strong></a> Rails, MongoDB, Ember, Sass, Haml, CoffeeScript
 
-![The Scene Homepage](/img/works/the-scene.jpg)
+![Desktop Screenshot](/img/works/the-scene.jpg "The Scene Homepage")
 
 In the summer of 2014, my team and I launched The Scene for CNÉ. It's an ambitious
 aggregate video site built with Ember on top of a Rails back-end.

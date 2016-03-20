@@ -4,7 +4,7 @@ title: "Patience"
 date: "2014-06-14 04:14:00 -0400"
 ---
 
-![](/img/patience-rocket.jpg)
+![Baby Picture](/img/patience-rocket.jpg "Rocket May")
 
 <br>Patience. Patience, baby Rocket.
 
