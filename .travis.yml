@@ -6,8 +6,8 @@ install:
   - bundle install
 
 script:
-  - jekyll build
-  - htmlproof ./_site
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --disable-external
 
 env:
   global:
