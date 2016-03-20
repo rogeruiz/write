@@ -13,6 +13,16 @@ github_username: rogeruiz
 
 permalink: /:title.html
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE.md
+
+include:
+  - bower_components/
+
 defaults:
   -
     scope:
@@ -35,13 +45,3 @@ defaults:
     values:
       categories: [ "works" ]
       permalink: /works/:title.html
-
-# Build settings
-#
-markdown: redcarpet
-
-# Babel support
-#
-babel:
-  source: _babel
-

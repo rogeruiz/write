@@ -7,7 +7,7 @@ categories: [works]
 
 <a href="http://jetblue.com" rel="nofollow" target="_blank"><strong>tl;dr:</strong></a> HTML, CSS, JS, RequireJS
 
-![JetBlue Homepage](/img/works/jetblue.jpg)
+![Desktop Screenshot](/img/works/jetblue.jpg "JetBlue Homepage")
 
 In 2011, JetBlue made Rokkan Agency of Record (AOR). As the AOR, we had to
 redesign their main website. Since then, I've worked both as a part of a team

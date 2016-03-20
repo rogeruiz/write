@@ -7,7 +7,7 @@ categories: [works]
 
 __tl;dr:__ Rails, VideoJS, Sass, JavaScript
 
-![In-Video Subscribe Animation](/img/works/in-video-subscribe.gif)
+![In-Video Subscribe Animation](/img/works/in-video-subscribe.gif "The Scene In-Video Subscribe Animation")
 
 Needing to increase the number of subscribers to The Scene. I implemented an
 in-video subscribe feature to our custom player to bring our subscriber-base up

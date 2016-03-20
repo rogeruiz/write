@@ -21,3 +21,13 @@ Icon*
 *.psd
 *.ai
 *.indd/vendor/
+
+# Bower Components Shuffle
+!bower_components
+bower_components/*
+!bower_components/jquery
+bower_components/jquery/*
+bower_components/jquery/dist/*
+!bower_components/jquery/dist/jquery.js
+bower_components/requirejs/*
+!bower_components/requirejs/require.js
