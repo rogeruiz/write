@@ -11,7 +11,14 @@ url: "http://write.rog.gr" # the base hostname & protocol for your site
 twitter_username: rogeruiz
 github_username: rogeruiz
 
-permalink: /:title.html
+permalink: /:title
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE.md
 
 defaults:
   -
@@ -20,28 +27,18 @@ defaults:
       type: "posts"
     values:
       categories: [ "writing" ]
-      permalink: /writing/:title.html
+      permalink: /writing/:title
   -
     scope:
       path: "dress-code"
       type: "posts"
     values:
       categories: [ "writing", "dress-code" ]
-      permalink: /dress-code/:title.html
+      permalink: /dress-code/:title
   -
     scope:
       path: "works"
       type: "posts"
     values:
       categories: [ "works" ]
-      permalink: /works/:title.html
-
-# Build settings
-#
-markdown: redcarpet
-
-# Babel support
-#
-babel:
-  source: _babel
-
+      permalink: /works/:title

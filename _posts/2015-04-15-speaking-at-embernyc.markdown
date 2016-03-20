@@ -2,7 +2,7 @@
 layout: post
 title: "Speaking at EmberNYC"
 date: "2015-04-15 09:48:20 -0400"
-permalink: /talks/:title.html
+permalink: /talks/:title
 ---
 
 I spoke back in Sept of 2014 of how we used Ember at Condé Nast to build [The Scene](https://thescene.com).
