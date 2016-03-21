@@ -12,6 +12,7 @@
 
 .site-title {
     font-size: 26px;
+    font-weight: 300;
     line-height: 2.153846154;
     letter-spacing: -1px;
     margin-top: 0;
@@ -183,12 +184,20 @@
 
     > li {
         margin-bottom: $spacing-unit;
+
+        h2 {
+            font-family: $ff-lato;
+            font-weight: 300;
+        }
     }
 }
 
 .post-meta {
     font-size: $small-font-size;
-    color: $cl-secondary-left;
+    color: $cl-tertiary-left;
+    font-family: $ff-merriweather;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .post-link {
