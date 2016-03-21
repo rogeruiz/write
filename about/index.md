@@ -1,7 +1,10 @@
 ---
 layout: page
-title: About
+title: About me to introduce myself
 ---
+
+[![Roger animated]({{ site.baseurl }}/img/about-self.gif "Typos,
+fam...")](http://rogerisworking.tumblr.com)
 
 I am web engineer specializing in client-side code. I find that there are many
 pressures in writing good software — some internal, some external. I listen
