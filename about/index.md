@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me to introduce myself
+title: About
 ---
 
 [![Roger animated]({{ site.baseurl }}/img/about-self.gif "Typos,
