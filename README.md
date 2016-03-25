@@ -7,4 +7,4 @@ done as a software engineer. You can also download [my latest resume
 here](http://write.rog.gr/resume.pdf). Though, that's not an invitation to do
 so.
 
-![Desktop Screenshot](https://dl.dropbox.com/s/sk5opne5btndwgt/Screenshot%202016-03-24%2023.35.14.png "Screenshot of http://write.rog.gr/")
+![Desktop Screenshot](https://dl.dropbox.com/s/ryiayx3jfxalg25/Screenshot%202016-03-25%2001.20.07.png)
