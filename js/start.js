@@ -1,3 +1,5 @@
+'use strict';
+
 requirejs.config( {
   baseUrl: '/js',
   paths: {
@@ -21,22 +23,22 @@ define( 'start', function ( require ) {
 
     ytembeds.registerEmbedElements();
 
-    $( window ).resize( function() {
+    $( window ).resize( function () {
       ytembeds.resizeEmbedElements();
     } );
 
   };
 } );
 
-( function( global ) {
+( function ( global ) {
 
   var d = global.document;
   var require = global.require;
 
   if ( d.addEventListener ) {
 
-    d.addEventListener( 'DOMContentLoaded', function() {
-      require( [ 'start' ], function( s ) { s(); } );
+    d.addEventListener( 'DOMContentLoaded', function () {
+      require( [ 'start' ], function ( s ) { s(); } );
     } );
 
   }
