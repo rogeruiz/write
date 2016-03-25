@@ -89,11 +89,14 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $cl-link;
+    color: $cl-tertiary-right;
     text-decoration: none;
+    font-family: $ff-merriweather;
+    font-weight: 400;
+    font-size: 0.9em;
 
     &:visited {
-        color: darken($cl-link, 15%);
+        color: $cl-tertiary-left;
     }
 
     &:hover {

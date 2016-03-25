@@ -40,7 +40,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $cl-link;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -175,7 +175,7 @@
 }
 
 .page-heading {
-    font-size: 20px;
+    font-size: 44px;
 }
 
 .post-list {
@@ -201,8 +201,13 @@
 }
 
 .post-link {
+    font-family: $ff-lato;
     display: block;
-    font-size: 24px;
+    font-size: 28px;
+    &,
+    &:visited {
+        color: $cl-link;
+    }
 }
 
 
