@@ -4,8 +4,8 @@ layout: default
 
 <div class="home">
 
-  <h2 class="page-heading">Hello,</h2>
-  <p>{{ site.description }}</p>
+  <h1 class="page-heading">Hello,</h1>
+  <p>{{ site.description | markdownify }}</p>
 
   <ul class="post-list">
     {% for post in site.categories.writing %}

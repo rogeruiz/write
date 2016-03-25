@@ -3,9 +3,10 @@
 title: Roger is a web engineer.
 email: hi@rog.gr
 description: > # this means to ignore newlines until "baseurl:"
-  I'm Roger and I'm a self-taught software engineer with a big passion for
-  JavaScript and client-side interactions. Software should always be a pleasure to
-  use.
+  I'm Roger, a self-taught software engineer who believes that
+  [JavaScript](http://www.ecmascript.org) will consume the earth for
+  better or for worse. Agree or disagree it's sure caused a whole lot
+  of _drama_.
 goodbye_message: >
   Thanks for stopping by. 👋🏽
 baseurl: "" # the subpath of your site, e.g. /blog/
