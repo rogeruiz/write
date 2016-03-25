@@ -6,27 +6,27 @@ title: About
 [![Roger animated]({{ site.baseurl }}/img/about-self.gif "Typos,
 fam...")](http://rogerisworking.tumblr.com)
 
-I am web engineer specializing in client-side code. I find that there are many
-pressures in writing good software — some internal, some external. I listen
-carefully to the concerns of engineers and others involved in the decision-making
-process – designers, clients, customers, and stakeholders. I foster relationships
-while working with everyone to empathetically understand what drives certain
-decisions in the early stages and throughout the life-cycle of software development
-and support.
+## Allow me to introduce myself
 
-I have a strong passion for good software. User experience to me is something
-that I think is too often ignored in products and I always have an opinion about
-how it could be done better. Because end-user software is an abstraction and
-combination of different concepts that a user may already be familiar with, it
-is important to realize that users of said software come from many different
-backgrounds and levels of expertise in so many different fields unrelated to
-software engineering. User's of software fall into two large categories that can
-be dissected further.
+I am a self-taught software developer that found my place in web development by
+coming in through the window, specifically the browser window. Coming from a
+traditional graphic design background, CSS and systems design were two things
+that felt as natural as color theory and typography. As I learned more about the
+history of and fundamentals of programming, I made my transition to full-stack
+web development.
 
-These two categories are:
+I view the projects I work on as umbrellas that cover or overlap many aspects of
+how people interact with the government. Whether it's interagency interactions
+like the [Open Opportunities platform] [openopps] or the [Federal Front Door]
+[ffd] welcoming civilians into necessary interactions with the government, I see
+the projects I am working on as a web that helps bring down walls around
+information or shed light into perceived black box processes.
 
-1. Users who love your software because it is great, intuitive, and a pleasure to use.
-2. Users who do not have any other choice.
+[openopps]: https://github.com/18F/openopps-platform "Open Opportunities Github Repo"
+[ffd]: https://labs.usa.gov/ "Federal Front Door at USA.gov"
 
-With every piece of code I touch, I strive for the former because I have either
-been in or witnessed users in that latter category all too often.
+After years of working in the advertising industry, I wanted a change that would
+make a real impact in the world using software. Instead of helping people
+click-through to more content or change a ad-specific communication preference,
+I want to change the way people have to interact with government services whether
+it's tools used by federal agencies or by the American people.
