@@ -29,38 +29,31 @@ request and establishes a coordinated request from two different origins / domai
 
 When a browser makes a request to an external resource on a different domain, the
 browser will insert a "preflight" request before your actual request. Depending on
-how the server responds to your `OPTIONS` request:
+how the server responds to your `OPTIONS` request the browser will reject or
+accept the request it initiated. The following request is checking that requests
+coming from `http://client-side-app.com` can perform `PUT` actions on the
+`server-side-api.com` host.
 
-```
-OPTIONS /v1 HTTP/1.1
-Origin: http://client-side-app.com
-Host: server-side-api.com
-Accept-Language: en-US
-Connection: keep-alive
-User-Agent: Whatever/YOLO 5.0...
-Access-Control-Request-Method: PUT
-Access-Control-Request-Headers: X-Client-Side
-```
+    OPTIONS /v1 HTTP/1.1
+    Origin: http://client-side-app.com
+    Host: server-side-api.com
+    Accept-Language: en-US
+    Connection: keep-alive
+    User-Agent: Whatever/YOLO 5.0...
+    Access-Control-Request-Method: PUT
+    Access-Control-Request-Headers: X-Client-Side
 
-A response that allows `PUT` and `DELETE` requests with cookies and custom-headers
+With that, your server-side code will check it's information and respond
+appropriately. In this case showing that `http://client-side-app.com` is an
+allowed `ORIGIN` and has two allowed methods, `PUT` & `DELETE`.
 
-```
-Access-Control-Allow-Origin: http://client-side-app.com
-Access-Control-Allow-Methods: PUT, DELETE
-Access-Control-Allow-Credentials: true
-Access-Control-Expose-Headers: X-Client-Side
-```
+    Access-Control-Allow-Origin: http://client-side-app.com
+    Access-Control-Allow-Methods: PUT, DELETE
+    Access-Control-Allow-Credentials: true
+    Access-Control-Expose-Headers: X-Client-Side
 
-## Let's get your server set up to respond appropriately
+## Using cURL to check your resources
 
-The first step to getting your server to respond appropriately is to make sure
-that it's not. My approach to working with web applications is to make sure that
-I am not building something that is already working. So let's debug our client
-and server interaction and make sure that CORS is giving us a hard time.
-
-### cURLing your way
-
-I have grown very accustomed to using my terminal for most things, this includes
-my text editor and time tracker. I even use Lynx from time-to-time to read some
-technical articles.
-
+Knowing how your server responds to this `OPTIONS` request is an important step
+in debugging any CORS errors. The following snippets have been super useful to
+me.
