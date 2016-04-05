@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/rogeruiz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://write.rog.gr
+  * I am rogeruiz (https://keybase.io/rogeruiz) on keybase.
+  * I have a public key with fingerprint B188 B7CD 0273 3C1E 9B81  799E 6806 1DBF 1C4C 0B44
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01207cd93035f8b73611c92bc6287be64d8dae419c45df12861b2d1012581cc335a70a",
+            "fingerprint": "b188b7cd02733c1e9b81799e68061dbf1c4c0b44",
+            "host": "keybase.io",
+            "key_id": "68061dbf1c4c0b44",
+            "kid": "0101470cd4a93abce692a7bd9669e58d7b8116f888a4d48b1b44bdeaef2eb78be5ba0a",
+            "uid": "8181b3c31df558b3543f43a9ea5acc19",
+            "username": "rogeruiz"
+        },
+        "service": {
+            "hostname": "write.rog.gr",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1459884835,
+    "expire_in": 157680000,
+    "prev": "53d7bdbb81952dbadf2552ecaa20c2fde9315828537addf4ee3380091bd23419",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMNwAnicbVJrTBRXGAWW3QaECiJRo4Vk8FGUwt557MysYrXFEAitEm1BJIU7c+8s
+I+zD3VlQHj7S0FJDhERr2/AIsZRgCxWtGG0obwoWW8DwKEJLQluhlhjbqEBrpXeJ
+/uv9c3O/e875zvnydQfqvPy9swwvtW1IWhHn3d9x3u2V4hsSUUBJdnSMMhdQ2Xj5
+wjkIu7SMbBVRZsoIaCMvI5ExMpwiSDxjAkAWaUk20QIvYROLBAQxC0SZ5ZACaMEE
+JBoBQuMEIMsMw0HeCKkoSlFtFux0OFWbRmQlIBAxGRlpnmFkgEVJALwoYpNgNAEk
+KUBmZaPEsoSYZXd5GMScBF04WrWTGnlkLNv7H/xz30bA8kYZsVBkoCRjk0hDXkKi
+ySRiTkA8aQhMiiAIkEWsIAFClhCGWKGxxAsS5iS47Nu9LCcAAUiMzACkcJwgMRzL
+KCwDRQw5KMtA9ABd2GmDVkzQTjuJ6lbzqaIoilRzVRl7ButJ8gyR51Q1HE1w0RYn
+4Tqcds0u23PIT5amOcweonbMsYzEUsYzjQxJtSEyRkLIxU6XardRZkCQsqZ6RAHL
+iYLACgwXReGjDtWJM1QPguPJlMjxtMG5RJJjSHwkkQmIHI0kiBSa42gsQ0gbZVpB
+WGQAJ9ACx/AQIYXFmGGIgggkRDPsclgXPmKzU2aB2IQWIulSLTaouZ2YKursSPf1
+8vb3Muh9POvl5e8X9HzpWhJXLsUvtSTx9VH96xKH4NXPuNjwL4pn78Lx93JKrnXv
+W7rCFPZ9Xq2PPRHT5mfhNm6toDZp8/tyZv7Z1K0rqckJbXyo2365cnjx3fSOtndO
+L2T+ndkTo3ulY7xi5mTV2gnqzo+X7vV+ujayLYqK224a1D5uCV/z4BwNxrW5GwOR
+X99P7bnZvf/2pUMhs3OtdSl9i/82TBz1CbN1NSSfWIy2B/tnn9pbd3DsV2Fgw/sJ
+D92jj3/Sze3c02zIT1oR8GLjOsdHvu1l18fiw8789faTrsfjO8OtrpsryxI+tOq0
+qUBX0Bqrf+HsU9qQnFp9+i6sjX9kv/fWg9TqPQmrAiLc2f2O4b2nxp7IC4ea9M33
+a2ur4MWrF9/EO2DhZPrWiJ7kkJHXyn5YGBzkNsf6tg9N9/FNxQUvfLcl3+q3pSa+
+vCOL27Y47V3RuC19tM7x+/qzpcyNVuvkrqS0WxdeLfTZndSTO9xzvCLyDX1t+dnD
+Y8iQ2Zvnbr5i0PWm6YNLhvZfL+j+tjKoKcFgqKrg4/qPtOf9cfyDiLTzdWFPE7+a
+YO6s7kp0ObMav9yVcqF+d6d5sfLkL4bTB/pK1Txrmf6bydoYS+jGkYb531YdeOQL
+//Q2DB/ece2Wff1AUeDPU0rNvE6+vPn2VGhe4PeT7MjBTzJN9a4AJSJFnR4tDW59
+vfhMX3Nn+eqXJ2eKEv8Dv6q7lg==
+=Nfxj
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rogeruiz
+
+==================================================================
