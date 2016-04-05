@@ -83,9 +83,13 @@ This man walked out of his daughter's life at the same age that my daughter is
 now. Almost two, two years old. This man walked back into his daughter's life,
 his daughter's open arms, her family's open arms after nearly 30 years of
 long-distance relationships. With 16 of those years physically far enough away
-from her that he began to take the shapes in Seurat's *La Parade de Cirque* from
-afar but up close he revealed all of the jagged shapes, harsh dots, and scratch
-marks making up the face of a mentally-ill Vincent van Gogh self-portrait.
+from her that he began to take the shapes in [Seurat's *A Sunday Afternoon on
+the Island of La Grande Jatte*] [i-seurat] from afar but up close he revealed
+all of the jagged shapes, harsh dots, and scratch marks making up the face of [a
+mentally-ill Vincent van Gogh self-portrait] [i-van-gogh].
+
+[i-seurat]: {{ site.baseurl }}/img/seurat.jpg "A Sunday Afternoon on the Island of La Grande Jatte"
+[i-van-gogh]: {{ site.baseurl }}/img/van-gogh.jpg "Self portrait"
 
 I am not doing my best in raising my daughter. Not by a long shot. I know I
 could be better, but I am also *good enough*. I am present. I am focused. I am
@@ -100,9 +104,10 @@ reason with a child, but this is both practice and structure around the kind of
 person I want to be and want my children to become. Not this shell that stands
 as more of a symbol than an actual person in our life. Our family's life.
 
-It didn't take our daughter long to forget this apparition. Swapping out Pom-Pom
-for Ama when referencing this little sticker she stuck on the staircase when she
-was 18 months old. The dynamics in the house shifted dramatically and my
-partner and I have had to stomach as much as we could the reality of having a
-tell-tale heart under the floorboards. She knows you're trouble and we won't let
-you do the same thing twice to two generations of women.
+It didn't take our daughter long to forget this apparition. Swapping out
+_Pom-Pom_ for _Ama_ when referencing this little sticker she stuck on the
+staircase when she was 18 months old that looks like you with sunglasses. The
+dynamics in the house shifted dramatically and my partner and I have had to
+stomach as much as we could the reality of having a tell-tale heart under the
+floorboards. She knows you're trouble and we won't let you do the same thing
+twice to two generations of women.
