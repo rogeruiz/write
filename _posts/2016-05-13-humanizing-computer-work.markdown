@@ -86,4 +86,4 @@ and wrote about how to set it up][setting-up-lolcommits].
 [mu-hack-and-tell]: http://www.meetup.com/hack-and-tell/ "Meetup's Hack&&Tell"
 [roger-is-working]: http://rogerisworking.tumblr.com/ "Roger Is Working"
 [eighteenf]: https://18f.gsa.gov/ "18F Homepage"
-[setting-up-lolcommits]: {{ site.baseurl }}/dress-code/setting-up-lolcommits "Setting up lolcommits guide"
+[setting-up-lolcommits]: {{ site.baseurl }}/dress-code/setting-up-lolcommits.html "Setting up lolcommits guide"

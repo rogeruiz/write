@@ -32,7 +32,7 @@ customizing it. I personally use it to post everything I commit as a photo to a
 aspects of working with computers][humanizing-computer-work].
 
 [roger-is-working]: http://rogerisworking.tumblr.com/ "Roger Is Working"
-[humanizing-computer-work]: {{ site.baseurl }}/writing/humanizing-computer-work "Humanizing computer work"
+[humanizing-computer-work]: {{ site.baseurl }}/writing/humanizing-computer-work.html "Humanizing computer work"
 
 ### Initializing teh lulz
 
