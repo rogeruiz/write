@@ -194,7 +194,7 @@ clone or create on your machine will have `lolcommits` enabled by default.
 #### Synchronizing your `config.yml` files
 
 Once you've created a `config.yml` file that automatically uploads things to
-Tumblr, you need to make sure copy that file over to each directory within
+Tumblr, you need to make sure to copy that file over to each directory within
 `$HOME/.lolcommits/`. I keep my base `conifg.yml` at the root-level of the
 `$HOME/.lolcommits/` directory and copy it over using the following command
 whenever I'm working with a new repository on my machines.
