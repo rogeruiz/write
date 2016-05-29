@@ -80,8 +80,9 @@ fi
 
 Now that we've got the hook installed, you can make your first commit and see
 what it's all about. You'll notice on the `post-commit` file that line 6 is just
-a call to `lolcommits --capture`. This is what takes the commit image. It accepts
-some flags to customize your experience. Feel free to play around with them.
+a call to `lolcommits --capture`. This is what takes the commit image. It
+accepts some additional flags to customize your experience. Feel free to play
+around with them.
 
 {% highlight shell %}
 ❯❯❯❯❯❯❯ lolcommits --help
@@ -100,25 +101,25 @@ your lolcommit image by running `lolcommits --browse`. This will open the
 open as you tweak your `lolcommits --capture **` command so you can preview your
 changes.
 
-Here's the command I use to capture my lovely commits
+Here's the command I use to capture my lovely commits:
 
 {% highlight shell %}
 lolcommits --capture --fork --stealth --delay=3 --animate=5
 {% endhighlight %}
 
-I find that `--fork` tends to allow me to quickly capture commits while
-`--stealth` just helps me forget it's taking a picture. Even though the green
-light will still turn on. The `--delay=3` is great so that the iSight camera can
-focus on you. Finally, `--animate=5` is what gives me `*.gif` files that I can
-later upload to Tumblr. This means I don't get any `*.jpg` files. I personally
-don't mind losing them, but if you want you can always run the command twice
-once without the `--animate=*` flag.
+I find that `--fork` allows me to quickly capture commits. The `--stealth` flag
+helps me forget it's taking a picture, even though the green light will still
+turn on. The `--delay=3` is great so that the iSight camera can focus on you.
+Finally, `--animate=5` is what gives me `*.gif` files that I can later upload to
+Tumblr. This means I don't get any `*.jpg` files. I personally don't mind losing
+them, but if you want you can always run the command twice once without the
+`--animate=*` flag.
 
 ### Configuring teh lulz
 
 There are [quite a few plugins][lol-plugins] available for `lolcommits` that do
-all sorts of fancy things. The one I like to use is the Tumblr one, since I
-don't want to worry about hosting.
+all sorts of fancy things. The one I like to use is the Tumblr plugin, since I
+don't want to worry about hosting or theming of my lolcommits.
 
 To configure Tumblr, you just need to follow the prompts after running the
 configuration command.
@@ -186,12 +187,17 @@ This will insure that `git init` and `git clone` copies over the `post-commit`
 file into the repositories `.git/hooks/` directory. Now every repository you
 clone or create on your machine will have `lolcommits` enabled by default.
 
+> Fun Fact: This is a feature of `git` and not `lolcommits` so you can
+> use it for any other git-hook templates you'd like to copy over into new
+> repositories.
+
 #### Synchronizing your `config.yml` files
 
 Once you've created a `config.yml` file that automatically uploads things to
 Tumblr, you need to make sure copy that file over to each directory within
 `$HOME/.lolcommits/`. I keep my base `conifg.yml` at the root-level of the
-`$HOME/.lolcommits/` directory and copy it over using the following command.
+`$HOME/.lolcommits/` directory and copy it over using the following command
+whenever I'm working with a new repository on my machines.
 
 {% highlight shell %}
 cp -v $HOME/.lolcommits/config.yml $HOME/.lolcommits/`echo "${PWD##*/}"`/config.yml
