@@ -80,8 +80,8 @@ fi
 
 Now that we've got the hook installed, you can make your first commit and see
 what it's all about. You'll notice on the `post-commit` file that line 6 is just
-a call to `lolcommits --capture`. This is what takes the commit. It accepts some
-flags to customize your experience. Feel free to play around with them.
+a call to `lolcommits --capture`. This is what takes the commit image. It accepts
+some flags to customize your experience. Feel free to play around with them.
 
 {% highlight shell %}
 ❯❯❯❯❯❯❯ lolcommits --help
