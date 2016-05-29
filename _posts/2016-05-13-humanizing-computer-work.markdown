@@ -42,7 +42,7 @@ So I continued from job to job and project to project collecting
 <img
   class="js-lol lol-static"
   src="{{ site.baseurl }}/img/writing/e00386fa9cb.jpg"
-  alt="lolcommit - e00386fa9cb Request Points page markup complete"
+  alt="lolcommit - e00386fa9cb - Request Points page markup complete"
   title="Random commit in history">
 
 <img
