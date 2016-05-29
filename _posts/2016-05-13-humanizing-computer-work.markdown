@@ -22,7 +22,7 @@ So I considered it important to start doing this **publicly**.
   <img
     class="js-lol lol-animated"
     src="https://67.media.tumblr.com/1bb834785aeccbcc2e4bf5c9820078b1/tumblr_o7u2ie8CwN1v08lzjo1_400.gif"
-    alt="lolcommit - Update home page file paths"
+    alt="lolcommit - 37fb0c641ec - Update URL structure for registration info"
     title="That face says all of the feelings with none of the time.">
 </a>
 
@@ -42,31 +42,31 @@ So I continued from job to job and project to project collecting
 <img
   class="js-lol lol-static"
   src="{{ site.baseurl }}/img/writing/e00386fa9cb.jpg"
-  alt="lolcommit - "
+  alt="lolcommit - e00386fa9cb Request Points page markup complete"
   title="Random commit in history">
 
 <img
   class="js-lol lol-static"
   src="{{ site.baseurl }}/img/writing/e65ac7931b6.jpg"
-  alt="lolcommit - "
+  alt="lolcommit - e65ac7931b6 - bringing back the popupToogle"
   title="Random commit in history">
 
 <img
   class="js-lol lol-static"
   src="{{ site.baseurl }}/img/writing/96c5dbadc13.jpg"
-  alt="lolcommit - "
+  alt="lolcommit - 96c5dbadc13 - Tweak the animation of slides based on nav clicks"
   title="Random commit in history">
 
 <img
   class="js-lol lol-static"
   src="{{ site.baseurl }}/img/writing/5f28f5c29c2.jpg"
-  alt="lolcommit - "
+  alt="lolcommit - 5f28f5c29c2 - Renaming the empty image"
   title="Random commit in history">
 
 <img
   class="js-lol lol-static"
   src="{{ site.baseurl }}/img/writing/5e1b150d9e2.jpg"
-  alt="lolcommit - "
+  alt="lolcommit - 5e1b150d9e2 - Fixed the edit-active triggering for each case."
   title="Random commit in history">
 
 ### That remote life
