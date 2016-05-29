@@ -1,0 +1,10 @@
+// Styles related to Dress Code Posts
+.lol-static {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.lol-animated {
+  @extend .lol-static;
+}
