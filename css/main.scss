@@ -16,7 +16,7 @@ $cl-link-hover: #3F4040;
 $cl-main: #FEFFFF;
 $cl-secondary-left: #FEFFFF;
 $cl-tertiary-left: #5929B2;
-$cl-secondary-right: #D1E8E1;
+$cl-secondary-right: lighten(#3F4040, 35%);
 $cl-tertiary-right: #A06DFF;
 $cl-tldr: #5929B2;
 $cl-quote: #B2AC3A;
@@ -72,5 +72,6 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "dress-code"
 ;
