@@ -6,8 +6,7 @@ install:
   - bundle install
 
 script:
-  - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --disable-external
+  - bundle exec rake test
 
 env:
   global:
