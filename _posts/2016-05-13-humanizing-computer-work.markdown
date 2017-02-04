@@ -21,7 +21,7 @@ So I considered it important to start doing this **publicly**.
   >
   <img
     class="js-lol lol-animated"
-    src="https://67.media.tumblr.com/1bb834785aeccbcc2e4bf5c9820078b1/tumblr_o7u2ie8CwN1v08lzjo1_400.gif"
+    src="{{ site.baseurl }}/img/writing/tumblr_okt6kmINP21v08lzjo1_400.gif"
     alt="lolcommit - 37fb0c641ec - Update URL structure for registration info"
     title="That face says all of the feelings with none of the time.">
 </a>
