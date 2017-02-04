@@ -103,8 +103,21 @@ a {
         color: $cl-text;
         text-decoration: underline;
     }
-}
 
+    .highlight-anchors p > & {
+      $l-color: rgba($cl-tertiary-left, 0.45);
+      $l-spacing: 0.25em;
+      display: inline;
+      background: $l-color;
+      color: rgba($cl-main, 0.95);
+      padding: $l-spacing;
+      margin-right: ($l-spacing * 2);
+      position: relative;
+      left: $l-spacing;
+      box-shadow: $l-spacing 0 0 $l-color,
+                  ($l-spacing * -1) 0 0 $l-color;
+    }
+}
 
 
 /**
