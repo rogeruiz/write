@@ -2,10 +2,11 @@
  * Syntax highlighting styles
  */
 // TODO: Make this use Hopscotch styles. Maybe even a version of Hopscotch Light
+pre, code { font-family: $ff-code; }
+
 .highlight {
     background: #ffffff;
     @extend %vertical-rhythm;
-    pre, code { font-family: $ff-code; }
 
     .c     { color: #989498; font-style: italic } // Comment
     .err   { color: #a61717; background-color: #e3d2d2 } // Error
