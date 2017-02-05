@@ -106,6 +106,10 @@ key in your GitHub account and paste your public key.
 
 ```sh
 
+export MY_KEY_ID="$(keybase pgp list | \
+                 grep -oiE 'key id.*$' | \
+                 grep -oE '[a-zA-Z0-9]+$')"
+
 keybase pgp export -q $MY_KEY_ID | pbcopy && \
 echo "default-key $MY_SIGNING_KEY" >> ~/.gnupg/gpg.conf && \
 open https://github.com/settings/keys
