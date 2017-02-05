@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $cl-tertiary-right;
     text-decoration: none;
-    font-family: $ff-merriweather;
+    transition: 0.1s background cubic-bezier(0.6, -0.28, 0.74, 0.05);
     font-weight: 400;
     font-size: 0.9em;
 
@@ -105,17 +105,22 @@ a {
     }
 
     .highlight-anchors p > & {
-      $l-color: rgba($cl-tertiary-left, 0.45);
-      $l-spacing: 0.25em;
+      $l-color: lighten(rgba($cl-tertiary-right, 0.5), 20%);
+      $l-spacing: 0.15em;
       display: inline;
       background: $l-color;
-      color: rgba($cl-main, 0.95);
-      padding: $l-spacing;
-      margin-right: ($l-spacing * 2);
+      color: rgba($cl-tertiary-left, 0.95);
+      padding: 0;
+      padding-right: $l-spacing * 2.5;
+      padding-bottom: $l-spacing * 1.75;
       position: relative;
       left: $l-spacing;
       box-shadow: $l-spacing 0 0 $l-color,
                   ($l-spacing * -1) 0 0 $l-color;
+      &:hover {
+        background: darken($l-color, 20%);
+        color: rgba($cl-main, 0.95);
+      }
     }
 }
 

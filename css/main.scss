@@ -8,6 +8,7 @@
 // Our variables
 $ff-merriweather: 'Merriweather', serif;
 $ff-lato: 'Lato', serif;
+$ff-code: 'M+ 2m NerdFont Patched', monospace;
 
 
 $cl-text: #0A0514;
@@ -70,6 +71,7 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "font",
         "base",
         "layout",
         "syntax-highlighting",
