@@ -26,6 +26,14 @@ exclude:
 include:
   - bower_components/
 
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+highlighter: rouge
+
 defaults:
   -
     scope:
