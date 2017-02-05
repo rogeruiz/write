@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
   better or for worse. Agree or disagree, it sure has caused a whole lot
   of _drama_.
 goodbye_message: >
-  Thanks for stopping by. 👋🏽
+  Thanks for stopping by. &#x1f44b;&#x1f3fd;
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://write.rog.gr" # the base hostname & protocol for your site
 twitter_username: rogeruiz
