@@ -101,8 +101,8 @@ git config --global commit.gpgsign true
 
 Next, using your key ID from the first command export your public key to upload
 it to GitHub. Copy your public key to your clipboard via `pbcopy` and configure
-your GPG installation with your signing key. In your browser window create a new
-GPG key in your GitHub account and paste your public key.
+your GPG installation with your signing key. In your browser, create a new GPG
+key in your GitHub account and paste your public key.
 
 ```sh
 
