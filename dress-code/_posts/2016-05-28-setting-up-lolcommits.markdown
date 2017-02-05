@@ -13,6 +13,7 @@ Installing `lolcommits` is pretty easy via Ruby Gems. If you've got the `gem`
 command on your computer, you can simply run the following command.
 
 {% highlight sh %}
+
 gem install lolcommits
 # If you've got permission errors, `sudo` like you mean it ( ie: `sudo !!` )
 {% endhighlight %}
@@ -20,7 +21,10 @@ gem install lolcommits
 After it installs, you can make sure it's available by running `lolcommits`.
 
 {% highlight shell %}
-❯❯❯❯❯❯❯ lolcommits
+
+lolcommits
+
+
 Do what exactly?
 Try: lolcommits --enable   (when in a git repository)
 Or:  lolcommits --help
@@ -50,13 +54,17 @@ like. This does a few things which __are pretty destructive__ if you use the
 `post-commit` hook. So make sure you back it up.
 
 {% highlight shell %}
+
 cp .git/hooks/post-commit .git/hooks/post-commit.bak
 {% endhighlight %}
 
 Now you can safely run `lolcommits --enable`.
 
 {% highlight shell %}
-❯❯❯❯❯❯❯ lolcommits --enable
+
+lolcommits --enable
+
+
 installed lolcommit hook to:
   -> $HOME/Developer/<REPO>/.git/hooks/post-commit
 (to remove later, you can use: lolcommits --disable)
@@ -65,7 +73,10 @@ installed lolcommit hook to:
 Which will give you the following output inside of `.git/hooks/post-commit`.
 
 {% highlight shell %}
-❯❯❯❯❯❯❯ cat .git/hooks/post-commit
+
+cat .git/hooks/post-commit
+
+
 #!/bin/sh
 ### lolcommits hook (begin) ###
 if [ ! -d "$GIT_DIR/rebase-merge" ]; then
@@ -85,7 +96,10 @@ accepts some additional flags to customize your experience. Feel free to play
 around with them.
 
 {% highlight shell %}
-❯❯❯❯❯❯❯ lolcommits --help
+
+lolcommits --help
+
+
 Usage: lolcommits [-vedclbscpsmwga]
     # shortened for emphasis & brevity
     -c, --capture                    capture lolcommit based on last git commit
@@ -104,6 +118,7 @@ changes.
 Here's the command I use to capture my lovely commits:
 
 {% highlight shell %}
+
 lolcommits --capture --fork --stealth --delay=3 --animate=5
 {% endhighlight %}
 
@@ -125,6 +140,7 @@ To configure Tumblr, you just need to follow the prompts after running the
 configuration command.
 
 {% highlight shell %}
+
 lolcommits --config -p tumblr
 {% endhighlight %}
 
@@ -136,7 +152,10 @@ use _after it creates an image_. [You can take a look at the source for the
 Tumblr plugin here][lol-tumblr-src].
 
 {% highlight shell %}
-❯❯❯❯❯❯❯ cat $HOME/.lolcommits/`echo ${PWD##*/}`/config.yml
+
+cat $HOME/.lolcommits/`echo ${PWD##*/}`/config.yml
+
+
 ---
 tumblr:
   enabled: true
@@ -170,6 +189,7 @@ configuration file ( ie `~/.gitconfig` ).
 To setup your `git_templates/` directory, you can follow these commands:
 
 {% highlight shell %}
+
 mkdir -p $HOME/.git_template/hooks/ && \
 git config --global init.templatedir ~/.git_template
 {% endhighlight %}
@@ -180,6 +200,7 @@ your `git init` template directory, you can copy the `post-commit` file that
 tweaked to your liking above.
 
 {% highlight shell %}
+
 cp -v .git/hooks/post-commit $HOME/.git_template/hooks/post-commit
 {% endhighlight %}
 
@@ -200,5 +221,6 @@ Tumblr, you need to make sure to copy that file over to each directory within
 whenever I'm working with a new repository on my machines.
 
 {% highlight shell %}
+
 cp -v $HOME/.lolcommits/config.yml $HOME/.lolcommits/`echo "${PWD##*/}"`/config.yml
 {% endhighlight %}
