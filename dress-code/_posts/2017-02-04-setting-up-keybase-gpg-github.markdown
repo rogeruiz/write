@@ -6,8 +6,9 @@ date: "2017-02-04 13:30:00 -0400"
 
 ## Getting started
 
-> This guide makes some assumptions that you're using the terminal to run the
-> following commands, and that you're using Mac hardware and software.
+> To use this guide you will need to be working in the terminal, like Bash or
+> Zsh. I also make the assumption that you're using Mac hardware and software.
+> In particular, you need to have Git and Keybase installed along with Homebrew.
 
 Let's walk through setting up [GitHub verified commits and tags][gh-gpg] with
 [GPG][hp-gpg] and [Keybase][hp-keybase]. Follow along with the great [Keybase
