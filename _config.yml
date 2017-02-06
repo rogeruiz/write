@@ -2,7 +2,7 @@
 #
 title: Roger is a web engineer.
 email: hi@rog.gr
-description: > # this means to ignore newlines until "baseurl:"
+description: > # this means to ignore newlines until the next stanza.
   I'm Roger, a self-taught software engineer who believes that
   [JavaScript](http://www.ecmascript.org) will consume the earth for
   better or for worse. Agree or disagree, it sure has caused a whole lot
