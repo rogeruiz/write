@@ -1,0 +1,24 @@
+---
+layout: default
+title: Writing
+---
+
+<div class="writing">
+
+  <div class="highlight-anchors page-description">
+    <p>Personal hobby collection of words and phrases. Or, the possible ramblings of an ambivalent <strike>lunatic</strike> person.</p>
+  </div>
+  <ul class="post-list">
+    {% for post in site.categories.writing %}
+      <li>
+        <span class="post-meta highlight"><code>&#xf073;</code>{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
