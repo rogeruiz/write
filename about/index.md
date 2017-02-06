@@ -6,7 +6,7 @@ title: About
 [![Roger animated]({{ site.baseurl }}/img/about-self.gif "Typos,
 fam...")](http://rogerisworking.tumblr.com)
 
-## Allow me to introduce myself
+## Hello there!
 
 I am a self-taught software developer that found my place in web development by
 coming in through the window, specifically the browser window. Coming from a
