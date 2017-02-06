@@ -130,10 +130,9 @@ a {
  */
 blockquote {
     color: $cl-secondary-right;
-    border-left: 4px solid $cl-secondary-left;
+    border-left: 4px solid rgba($cl-secondary-right, 0.25);
     padding-left: $spacing-unit / 2;
     font-size: 18px;
-    letter-spacing: -1px;
     font-style: italic;
 
     > :last-child {
