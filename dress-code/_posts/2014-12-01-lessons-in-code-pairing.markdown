@@ -15,27 +15,32 @@ in source control as well. So that I don't end losing parts of my personality.
 
 Where your user preferences live (on a Mac):
 
-{% highlight sh %}
-# If you use st2
-$ cd $HOME/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
+```sh
+
+# If you use Sublime Text 2
+cd $HOME/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
 
-# If you use st3
-$ cd $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-{% endhighlight %}
+
+# If you use Sublime Text 3
+cd $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+```
 
 Once you've navigated to this folder in the terminal, you can just run the
 following command within that directory to get started.
 
-{% highlight sh %}
-$ git init
-{% endhighlight %}
+```sh
+
+git init
+```
 
 Since this is your first time using git with your sublime settings, you can just
 commit everything in there using:
 
-{% highlight sh %}
-$ git add . && git commit -m "Initial commit"
-{% endhighlight %}
+```sh
+
+git add . && \
+git commit -m "Initial commit"
+```
 
 Now that you've set your settings are under version control, you can go ahead
 and start updating them and committing your changes along the way.
