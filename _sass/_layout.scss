@@ -1,9 +1,27 @@
+html {
+  $cl-top: lighten($cl-tertiary-right, 15%);
+  $cl-bottom: darken($cl-tertiary-left, 5%);
+  @include linearGradient($cl-top, $cl-bottom);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $cl-main;
+  margin: 1.25em 1em 1.5em;
+  padding: 2em 0;
+  @include linearGradient(rgba($cl-main, 0.98), rgba($cl-main, 0.99));
+  @include media-query($on-palm) {
+    background-color: $cl-main;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 /**
  * Site header
  */
 .site-header {
-    border-top: 5px solid $cl-secondary-left;
-    border-bottom: 1px solid $cl-secondary-left;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -100,9 +118,7 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $cl-secondary-left;
     padding: $spacing-unit 0;
-    background: $cl-secondary-left;
 }
 
 .footer-heading {
@@ -178,6 +194,12 @@
     font-size: 44px;
 }
 
+.page-description {
+  font-weight: 700;
+  font-size: 1.25em;
+  color: #555;
+}
+
 .post-list {
     margin-left: 0;
     list-style: none;
@@ -210,7 +232,31 @@
     }
 }
 
-
+.exp-list {
+  @extend .post-list;
+}
+.exp-name {
+  @extend .post-meta;
+  font-family: $ff-lato;
+}
+.exp-dates {
+  @extend .post-meta;
+  font-family: $ff-lato;
+  text-transform: capitalize;
+  $l-color: lighten(rgba($cl-tertiary-right, 0.5), 20%);
+  $l-spacing: 0.15em;
+  display: inline;
+  background: $l-color;
+  color: rgba($cl-tertiary-left, 0.95);
+  padding: 0;
+  padding-right: $l-spacing * 2.5;
+  padding-bottom: $l-spacing * 1.75;
+  position: relative;
+  left: $l-spacing;
+  box-shadow: $l-spacing 0 0 $l-color,
+              ($l-spacing * -1) 0 0 $l-color;
+}
+.exp-title {}
 
 /**
  * Posts

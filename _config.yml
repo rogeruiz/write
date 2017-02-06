@@ -2,15 +2,14 @@
 #
 title: Roger is a web engineer.
 email: hi@rog.gr
-description: > # this means to ignore newlines until "baseurl:"
-  I'm Roger, a self-taught software engineer who believes that
-  [JavaScript](http://www.ecmascript.org) will consume the earth for
-  better or for worse. Agree or disagree, it sure has caused a whole lot
-  of _drama_.
+description: > # this means to ignore newlines until the next stanza.
+  Roger Steve Ruiz is a software engineer currently focusing on the
+  [&#x2601;&#xFE0F;&#x2601;&#xFE0F;&#x2601;&#xFE0F;](https://cloud.gov) at
+  [18F](https://18f.gsa.gov) and user-centered digital services.
 goodbye_message: >
   Thanks for stopping by. &#x1f44b;&#x1f3fd;
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://write.rog.gr" # the base hostname & protocol for your site
+baseurl: ""
+url: "http://write.rog.gr"
 twitter_username: rogeruiz
 github_username: rogeruiz
 
@@ -47,7 +46,7 @@ defaults:
       path: "dress-code"
       type: "posts"
     values:
-      categories: [ "writing", "dress-code" ]
+      categories: [ "dress-code" ]
       permalink: /dress-code/:title.html
   -
     scope:

@@ -4,13 +4,14 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Hello,</h1>
-  <div class="highlight-anchors">
+  <h1 class="page-heading">Hi,</h1>
+  <div class="highlight-anchors page-description">
     {{ site.description | markdownify }}
   </div>
 
+  <h3>Latest Writing</h3>
   <ul class="post-list">
-    {% for post in site.categories.writing %}
+    {% for post in site.categories.writing limit:1 %}
       <li>
         <span class="post-meta highlight"><code>&#xf073;</code>{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -19,6 +20,42 @@ layout: default
         </h2>
       </li>
     {% endfor %}
+      <li class="highlight-anchors">
+        <p><a href="{{ site.baseurl }}/writing/index.html">Continue peeking into my personal diary.<code>&#xf0c1;</code></a></p>
+      </li>
+  </ul>
+
+  <h3>Latest Dress Code</h3>
+  <ul class="post-list">
+    {% for post in site.categories.dress-code limit:1 %}
+      <li>
+        <span class="post-meta highlight"><code>&#xf073;</code>{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+      <li class="highlight-anchors">
+        <p><a href="{{ site.baseurl }}/dress-code/index.html">Continue on to learn something new or how wrong I am.<code>&#xf0c1;</code></a></p>
+      </li>
+  </ul>
+
+
+  <h3>Latest Work</h3>
+  <ul class="post-list">
+    {% for post in site.categories.works limit:1 %}
+      <li>
+        <span class="post-meta highlight"><code>&#xf073;</code>{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+      <li class="highlight-anchors">
+        <p><a href="{{ site.baseurl }}/works/index.html">Continue on learning how to put more of the conceptal stuff I build into perspective here.<code>&#xf0c1;</code></a></p>
+      </li>
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

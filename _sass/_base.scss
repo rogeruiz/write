@@ -1,3 +1,14 @@
+@mixin linearGradient($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
 /**
  * Reset some basic elements
  */
@@ -91,9 +102,9 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $cl-tertiary-right;
     text-decoration: none;
-    transition: 0.1s background cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    transition: 0.1s background cubic-bezier(0.6, -0.28, 0.74, 0.05),
+              0.1s box-shadow cubic-bezier(0.6, -0.28, 0.74, 0.05);
     font-weight: 400;
-    font-size: 0.9em;
 
     &:visited {
         color: $cl-tertiary-left;
@@ -104,11 +115,19 @@ a {
         text-decoration: underline;
     }
 
+    &.no-highlight {
+      display: inline !important;
+      background: transparent !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
+
     .highlight-anchors p > & {
-      $l-color: lighten(rgba($cl-tertiary-right, 0.5), 20%);
+      $l-color: lighten(rgba($cl-tertiary-right, 0.75), 20%);
       $l-spacing: 0.15em;
       display: inline;
       background: $l-color;
+      background-position: 10%;
       color: rgba($cl-tertiary-left, 0.95);
       padding: 0;
       padding-right: $l-spacing * 2.5;
@@ -120,6 +139,8 @@ a {
       &:hover {
         background: darken($l-color, 20%);
         color: rgba($cl-main, 0.95);
+        box-shadow: $l-spacing 0 0 darken($l-color, 20%),
+                    ($l-spacing * -1) 0 0 darken($l-color, 20%);
       }
     }
 }
@@ -147,9 +168,7 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $cl-secondary-left;
-    border-radius: 3px;
+    font-size: $base-font-size;
 }
 
 code {
