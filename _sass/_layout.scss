@@ -194,6 +194,12 @@ body {
     font-size: 44px;
 }
 
+.page-description {
+  font-weight: 700;
+  font-size: 1.25em;
+  color: #555;
+}
+
 .post-list {
     margin-left: 0;
     list-style: none;
@@ -226,7 +232,31 @@ body {
     }
 }
 
-
+.exp-list {
+  @extend .post-list;
+}
+.exp-name {
+  @extend .post-meta;
+  font-family: $ff-lato;
+}
+.exp-dates {
+  @extend .post-meta;
+  font-family: $ff-lato;
+  text-transform: capitalize;
+  $l-color: lighten(rgba($cl-tertiary-right, 0.5), 20%);
+  $l-spacing: 0.15em;
+  display: inline;
+  background: $l-color;
+  color: rgba($cl-tertiary-left, 0.95);
+  padding: 0;
+  padding-right: $l-spacing * 2.5;
+  padding-bottom: $l-spacing * 1.75;
+  position: relative;
+  left: $l-spacing;
+  box-shadow: $l-spacing 0 0 $l-color,
+              ($l-spacing * -1) 0 0 $l-color;
+}
+.exp-title {}
 
 /**
  * Posts

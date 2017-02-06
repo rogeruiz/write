@@ -168,9 +168,7 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $cl-secondary-left;
-    border-radius: 3px;
+    font-size: $base-font-size;
 }
 
 code {

@@ -24,9 +24,22 @@ information or shed light into perceived black box processes.
 
 [openopps]: https://github.com/18F/openopps-platform "Open Opportunities Github Repo"
 [ffd]: https://labs.usa.gov/ "Federal Front Door at USA.gov"
+[uswds]: https://standards.usa.gov/ "Draft US Web Design Standards"
+[cg-home]: https://cloud.gov/ "A Platform as a Service for government teams"
 
 After years of working in the advertising industry, I wanted a change that would
 make a real impact in the world using software. Instead of helping people
 click-through to more content or change a ad-specific communication preference,
 I want to change the way people have to interact with government services whether
 it's tools used by federal agencies or by the American people.
+
+### Experience
+<ul class="exp-list">
+  {% for exp in site.data.experiences %}
+  <li>
+    <span class="exp-name">{{ exp.name }}</span>
+    <span class="exp-dates" title="{{ exp.length }}">{{ exp.dates }}</span>
+    <p>{{ exp.title }}</p>
+  </li>
+  {% endfor %}
+</ul>
