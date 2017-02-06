@@ -3,8 +3,8 @@ layout: page
 title: About
 ---
 
-[![Roger animated]({{ site.baseurl }}/img/about-self.gif "Typos,
-fam...")](http://rogerisworking.tumblr.com)
+<a class="no-highlight" href="http://rogerisworking.tumblr.com">![Roger animated]({{ site.baseurl }}/img/about-self.gif "Typos,
+fam...")</a>
 
 ## Hello there!
 

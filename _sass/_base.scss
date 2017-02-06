@@ -104,6 +104,13 @@ a {
         text-decoration: underline;
     }
 
+    &.no-highlight {
+      display: inline !important;
+      background: transparent !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
+
     .highlight-anchors p > & {
       $l-color: lighten(rgba($cl-tertiary-right, 0.5), 20%);
       $l-spacing: 0.15em;

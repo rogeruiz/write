@@ -18,6 +18,7 @@ So I considered it important to start doing this **publicly**.
   href="https://rogerisworking.tumblr.com"
   target="_blank"
   title="See all the glorious public faces of me"
+  class="no-highlight"
   >
   <img
     class="js-lol lol-animated"
