@@ -132,3 +132,8 @@ mentioned below.
 I mentioned it above. Please follow along on the instructions in the [Keybase
 GPG GitHub repository's `README.md`][gh-keybase-gpg-github]. The instructions
 there were adapted for the guide above.
+
+### If you've made it this far...
+
+I have some Keybase invites left. If you're interested, hit me up in the various
+ways provided all over the internet and I'll send you one.
