@@ -77,34 +77,33 @@ body {
         top: 9px;
         right: 30px;
         background-color: $cl-main;
-        border: 1px solid $cl-tertiary-left;
+        border: 1px solid transparent;
         border-radius: 5px;
         text-align: right;
 
         .menu-icon {
+            text-decoration: none;
+            font-family: $ff-code;
             display: block;
             float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
+            font-size: 1.25em !important;
+            padding: 0.5em;
+            line-height: 1;
+            font-size: 1em;
             text-align: center;
+            color: $cl-tertiary-left;
 
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $cl-tertiary-left;
-                }
-            }
-        }
+       }
 
         .trigger {
             clear: both;
             display: none;
         }
 
+        &:hover {
+          border: 1px solid $cl-tertiary-left;
+          border-radius: 5px;
+        }
         &:hover .trigger {
             display: block;
             padding-bottom: 5px;
