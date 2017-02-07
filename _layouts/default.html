@@ -9,7 +9,7 @@
 
     <div class="page-content">
       <div class="wrapper">
-        {% if page.title %}
+        {% if page.title and page.title != 'About' %}
           <h1 class="page-heading">{{ page.title }}</h1>
         {% endif %}
         {{ content }}
