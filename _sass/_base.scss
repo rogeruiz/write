@@ -130,10 +130,12 @@ a {
       background-position: 10%;
       color: rgba($cl-tertiary-left, 0.95);
       padding: 0;
-      padding-right: $l-spacing * 2.5;
+      padding-left: $l-spacing * 2.5;
       padding-bottom: $l-spacing * 1.75;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
       position: relative;
-      left: $l-spacing;
+      right: $l-spacing;
       box-shadow: $l-spacing 0 0 $l-color,
                   ($l-spacing * -1) 0 0 $l-color;
       &:hover {
