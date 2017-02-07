@@ -1,11 +1,11 @@
 # Site settings
 #
-title: Roger is a web engineer.
+title: Roger is an engineer at 18F
 email: hi@rog.gr
 description: > # this means to ignore newlines until the next stanza.
-  Roger Steve Ruiz is a software engineer currently focusing on the
-  [&#x2601;&#xFE0F;&#x2601;&#xFE0F;&#x2601;&#xFE0F;](https://cloud.gov) at
-  [18F](https://18f.gsa.gov) and user-centered digital services.
+  I'm Roger Steve Ruiz. I contribute to open source software at
+  [18F](https://18f.gsa.gov) building user-centered digital services
+  and the [&#x2601;&#xFE0F;](https://cloud.gov).
 goodbye_message: >
   Thanks for stopping by. &#x1f44b;&#x1f3fd;
 baseurl: ""

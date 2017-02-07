@@ -192,20 +192,52 @@ body {
 
 .page-heading {
     font-size: 44px;
+    margin: 0;
 }
 
 .page-description {
   font-weight: 700;
-  font-size: 1.25em;
+  font-size: 2em;
   color: #555;
+  margin-bottom: $spacing-unit * 2;
+  a {
+    font-weight: 700;
+  }
+}
+
+.cta-links {
+  margin-bottom: $spacing-unit * 1.5;
 }
 
 .post-list {
     margin-left: 0;
     list-style: none;
-
+    margin-bottom: 0;
+    clear: both;
+    &::before, &::after {
+      content: '';
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+    zoom: 1;
     > li {
-        margin-bottom: $spacing-unit;
+        display: inline-block;
+        width: 50%;
+        min-height: 80px;
+        float: left;
+
+        @include media-query($on-laptop) {
+          float: none;
+          width: 80%;
+          min-height: 90px;
+        }
+
+        @include media-query($on-palm) {
+          float: none;
+          width: 100%;
+        }
 
         h2 {
             font-family: $ff-lato;
@@ -234,6 +266,10 @@ body {
 
 .exp-list {
   @extend .post-list;
+  li {
+    float: none;
+    width: 100%;
+  }
 }
 .exp-name {
   @extend .post-meta;

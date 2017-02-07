@@ -5,13 +5,13 @@ layout: default
 <div class="home">
 
   <h1 class="page-heading">Hi,</h1>
-  <div class="highlight-anchors page-description">
+  <div class="page-description">
     {{ site.description | markdownify }}
   </div>
 
   <h3>Latest Writing</h3>
   <ul class="post-list">
-    {% for post in site.categories.writing limit:1 %}
+    {% for post in site.categories.writing limit:4 %}
       <li>
         <span class="post-meta highlight"><code>&#xf073;</code>{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -20,14 +20,17 @@ layout: default
         </h2>
       </li>
     {% endfor %}
-      <li class="highlight-anchors">
-        <p><a href="{{ site.baseurl }}/writing/index.html">Continue peeking into my personal diary.<code>&#xf0c1;</code></a></p>
-      </li>
   </ul>
+  <div class="cta-links highlight-anchors">
+    <p>
+      You're welcome to <a href="{{ site.baseurl }}/writing/index.html">read
+      more</a> of my personal writing and essays.
+    </p>
+  </div>
 
   <h3>Latest Dress Code</h3>
   <ul class="post-list">
-    {% for post in site.categories.dress-code limit:1 %}
+    {% for post in site.categories.dress-code limit:4 %}
       <li>
         <span class="post-meta highlight"><code>&#xf073;</code>{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -36,15 +39,18 @@ layout: default
         </h2>
       </li>
     {% endfor %}
-      <li class="highlight-anchors">
-        <p><a href="{{ site.baseurl }}/dress-code/index.html">Continue on to learn something new or how wrong I am.<code>&#xf0c1;</code></a></p>
-      </li>
   </ul>
-
+  <div class="cta-links highlight-anchors">
+    <p>
+        Not everything I like to write is cathartic. This is
+        <a href="{{ site.baseurl }}/dress-code/index.html">my attempt
+        to give back to either my future self or present day you.</a>
+    </p>
+      </div>
 
   <h3>Latest Work</h3>
   <ul class="post-list">
-    {% for post in site.categories.works limit:1 %}
+    {% for post in site.categories.works limit:4 %}
       <li>
         <span class="post-meta highlight"><code>&#xf073;</code>{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -53,10 +59,14 @@ layout: default
         </h2>
       </li>
     {% endfor %}
-      <li class="highlight-anchors">
-        <p><a href="{{ site.baseurl }}/works/index.html">Continue on learning how to put more of the conceptal stuff I build into perspective here.<code>&#xf0c1;</code></a></p>
-      </li>
   </ul>
+  <div class="cta-links highlight-anchors">
+    <p>
+      Anything I'm <a href="{{ site.baseurl }}/works/index.html">working
+      on or contributing to</a> that deserves more than just lip service ends
+      up here. Animated gifs abound.
+    </p>
+  </div>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
