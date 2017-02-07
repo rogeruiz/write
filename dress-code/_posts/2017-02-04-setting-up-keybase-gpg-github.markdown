@@ -10,6 +10,18 @@ date: "2017-02-04 13:30:00 -0400"
 > Zsh. I also make the assumption that you're using Mac hardware and software.
 > In particular, you need to have Git and Keybase installed along with Homebrew.
 
+GNU Privacy Guard (GPG) is pretty dope. It allows you to send encrypted information
+from yourself to another trusted person. You're able to control who the other
+trusted person is by practicing safe distribution of your public key. They can
+verify messages that you send them signed (encrypted) with your private key by
+using their copy of your public key to decrypt it.
+
+So, I had a [Keybase account][kb-profile] before the whole `[Verified]` thing on
+GitHub was on my radar. I didn't know much about it or how it would be something
+that I wanted to do for my workflow. I already considered [my
+selfies]({{ site.baseurl }}/writing/humanizing-computer-work.html) to be enough
+to validate my identity. &#x1f61c;
+
 Let's walk through setting up [GitHub verified commits and tags][gh-gpg] with
 [GPG][hp-gpg] and [Keybase][hp-keybase]. Follow along with the great [Keybase
 GPG GitHub repository][gh-keybase-gpg-github] otherwise continue reading below
@@ -17,17 +29,12 @@ to take an existing Keybase key and use it for your [GitHub account][gh-keys].
 
 [gh-gpg]: https://github.com/blog/2144-gpg-signature-verification "GitHub GPG Signature Verification"
 [hp-gpg]: https://gnupg.org "The GNU Privacy Guard"
+[kb-profile]: https://keybase.io/rogeruiz "Roger Steve Ruiz (rogeruiz) | Keybase"
 [hp-keybase]: https://keybase.io "Keys for everyone! Keybase maps your identity to your public keys, and vice versa."
 [gh-keybase-gpg-github]: https://github.com/pstadler/keybase-gpg-github "Keybase GPG GitHub repository"
 [gh-keys]: https://github.com/settings/keys "GitHub SSH and GPG Keys"
 
 ### You already have a Keybase account and key
-
-So, I had a Keybase account before the whole `[Verified]` thing on GitHub was on
-my radar. I didn't know much about it or how it would be something that I wanted
-to do for my workflow. I already considered [my
-selfies]({{ site.baseurl }}/writing/humanizing-computer-work.html) to be enough
-to validate my identity. &#x1f61c;
 
 If you don't already have `gpg` installed on your machine, just brew some up
 from source.
