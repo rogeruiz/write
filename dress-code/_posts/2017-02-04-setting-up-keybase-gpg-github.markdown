@@ -178,8 +178,6 @@ with your Keybase account.
 
 Ahmad Nassri has [a great guide on how to update your GPG uid][an-guide] to
 update the email address for your GPG key and update your Keybase key as well.
-When you're done reading that, come back here and follow the rest of the guide
-below.
 
 [gh-emails]: https://github.com/settings/emails "GitHub Email settings"
 [an-guide]: https://www.ahmadnassri.com/blog/github-gpg-keybase-pgp/ "Github GPG + Keybase PGP - Ahmad Nassri"
