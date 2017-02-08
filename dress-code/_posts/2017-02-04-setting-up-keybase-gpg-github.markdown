@@ -75,7 +75,8 @@ keybase pgp export -s | \
 gpg --import --allow-secret-key-import
 
 
-GPG key imported
+# shortened for brevity
+GPG key imported!
 ```
 
 Next, make sure that your key was imported correctly. Your identity should be
