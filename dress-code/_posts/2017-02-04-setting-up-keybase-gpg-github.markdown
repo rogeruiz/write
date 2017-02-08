@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setting up Keybase GPG with GitHub"
+title: "Using Keybase with GitHub"
 date: "2017-02-04 13:30:00 -0400"
 ---
 
