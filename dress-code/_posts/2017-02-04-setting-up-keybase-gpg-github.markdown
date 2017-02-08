@@ -160,16 +160,19 @@ allows me to filter my GitHub emails based on activity to each address.
 keybase pgp list
 
 
-Keybase Key ID: $KEY_ID_FOR_QUERY
-PGP Fingerprint: MYP GP FIN GER PR INT
+# shortened for emphasis, brevity, and security
 PGP Identities:
-   Name Last <hello@example.com>
+   Roger Steve Ruiz <hi@rog.gr>
+   Roger Steve Ruiz <roger.ruiz@gsa.gov>
 ```
 
-If you're PGP identities from above do not contain any verifiable email or [any
+If your PGP identities from above do not contain any verifiable email or [any
 of the emails you use to commit with Git and GitHub][gh-emails], you need to
-make sure to add that email address to your PGP identities before adding your
-Keybase public key to GitHub.
+make sure to add that email address (uid) to your PGP identities before adding
+your Keybase public key to GitHub. If you already uploaded a GPG key to GitHub
+with the wrong identities, you can delete it and add your GPG key again. Since
+the public key will have the same identifier, GitHub won't let you add a
+duplicate key even though the `Email Addresses` have been updated.
 
 You can't really do this from within Keybase itself as far as I know, but you
 can import keys from your local GPG keyring. That means that you will be updated
