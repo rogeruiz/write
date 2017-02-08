@@ -182,8 +182,7 @@ When you're done reading that, come back here and follow the rest of the guide
 below.
 
 [gh-emails]: https://github.com/settings/emails "GitHub Email settings"
-[an-guide]: https://www.ahmadnassri.com/blog/github-gpg-keybase-pgp/ "Github GPG
-+ Keybase PGP - Ahmad Nassri"
+[an-guide]: https://www.ahmadnassri.com/blog/github-gpg-keybase-pgp/ "Github GPG + Keybase PGP - Ahmad Nassri"
 
 ### If you've made it this far...
 
