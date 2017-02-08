@@ -58,6 +58,10 @@ Keybase Key ID: $KEY_ID_FOR_QUERY
 PGP Fingerprint: MYP GP FIN GER PR INT
 PGP Identities:
    Name Last <hello@example.com>
+#             ^^^^^^^^^^^^^^^^^ Mind your identities, at least one of them must
+#                               match an email address you have associated with
+#                               GitHub account and should match all the email
+#                               address that you commit and push to GitHub.
 ```
 
 To use GPG for GitHub verified commits, you need to export your key from
@@ -132,6 +136,54 @@ mentioned below.
 I mentioned it above. Please follow along on the instructions in the [Keybase
 GPG GitHub repository's `README.md`][gh-keybase-gpg-github]. The instructions
 there were adapted for the guide above.
+
+### If you're PGP identities don't match your GitHub emails
+
+When running `keybase pgp list`, you noticed that your PGP Identities there
+didn't match any of your email address you use with Git and GitHub. You'll need
+to update your GPG key to include these email addresses as identities in order
+to get the `[Verified]` icon on GitHub.
+
+#### Verify your PGP Identities
+
+In order for GitHub to properly verify your identity, they ask you to verify
+your email address in order to confirm that email address with the email address
+supplied in your Git commit.
+
+For instance, I have two email addresses I regularly commit with. I use my
+`gsa.gov` email for committing work-related changes and use my `rog.gr` email
+for committing personal-related changes to repositories on GitHub. It also
+allows me to filter my GitHub emails based on activity to each address.
+
+```sh
+
+keybase pgp list
+
+
+Keybase Key ID: $KEY_ID_FOR_QUERY
+PGP Fingerprint: MYP GP FIN GER PR INT
+PGP Identities:
+   Name Last <hello@example.com>
+```
+
+If you're PGP identities from above do not contain any verifiable email or [any
+of the emails you use to commit with Git and GitHub][gh-emails], you need to
+make sure to add that email address to your PGP identities before adding your
+Keybase public key to GitHub.
+
+You can't really do this from within Keybase itself as far as I know, but you
+can import keys from your local GPG keyring. That means that you will be updated
+the uids on for your keyring with Name and Email fields and then resync those
+with your Keybase account.
+
+Ahmad Nassri has [a great guide on how to update your GPG uid][an-guide] to
+update the email address for your GPG key and update your Keybase key as well.
+When you're done reading that, come back here and follow the rest of the guide
+below.
+
+[gh-emails]: https://github.com/settings/emails "GitHub Email settings"
+[an-guide]: https://www.ahmadnassri.com/blog/github-gpg-keybase-pgp/ "Github GPG
++ Keybase PGP - Ahmad Nassri"
 
 ### If you've made it this far...
 
