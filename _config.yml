@@ -13,6 +13,9 @@ url: "http://write.rog.gr"
 twitter_username: rogeruiz
 github_username: rogeruiz
 
+og:
+  description: I'm Roger Steve Ruiz. I contribute to open source software at 18F building user-centered digital services and the cloud.
+
 permalink: /:title.html
 
 exclude:

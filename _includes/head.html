@@ -13,8 +13,9 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <meta property="og:url"                content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-  <meta property="og:title"              content="{% if page.title %}{{ " | Roger Steve Ruiz" | prepend: page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta property="og:image"              content="{{ "/img/og_image.png" | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:title" content="{% if page.title %}{{ " | Roger Steve Ruiz" | prepend: page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:description" content="{{ site.og.description }}">
+  <meta property="og:image" content="{{ "/img/og_image.png" | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 </head>
