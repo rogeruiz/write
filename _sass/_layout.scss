@@ -258,6 +258,15 @@ body {
     text-transform: uppercase;
 }
 
+.post-category {
+    font-size: $small-font-size;
+    color: $cl-tertiary-right;
+    font-family: $ff-merriweather;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 0.5;
+}
+
 .post-link {
     font-family: $ff-lato;
     display: block;
