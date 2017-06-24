@@ -44,7 +44,7 @@ Feel free to skip around to any of the following sections.
 - [Customizing teh lulz](#customizing-teh-lulz)
 - [Configuring teh lulz](#configuring-teh-lulz)
 - [Automating teh lulz](#automating-teh-lulz)
-- [Setting up your `~/.git_templates/` directory](#setting-up-your-gittemplates-directory)
+- [Setting up your `~/.git_templates/` directory](#setting-up-your-git_templates-directory)
 - [Synchronizing your `config.yml` files](#synchronizing-your-configyml-files)
 
 ### Initializing teh lulz
