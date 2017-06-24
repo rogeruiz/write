@@ -6,9 +6,10 @@ date: "2017-06-22 00:19:00 -0400"
 
 ## Getting started
 
-> This guide is more of a review of the decisions that went into my PS1 prompt.
-> Your mileage may vary, but remember to have fun and create the PS1 you want to
-> see in the world.
+> This guide is more of a review of the decisions that went into my [`Prompt String 1` (PS1)][ps1-faq].
+> Your mileage may vary, but remember to have fun and create the PS1 you want to see in the world.
+
+[ps1-faq]: http://www.linuxnix.com/linuxunix-shell-ps1-prompt-explained-in-detail/
 
 I really really really spend a lot of time in a terminal. I got hooked all the
 way back in my MS-DOS days with the idea that I could write a set of
@@ -18,7 +19,7 @@ one of my favorite aspects of using it. There's also the added benefit of
 intent, or friction depending on what you're doing, that using only a keyboard
 facilitates when working in high-risk environments. Mice and touch are nice
 modernities of contemporary computer life, but it's nice to feel like you're
-back in 80s and 90s logged into a computer somewhere else. It's also really
+back in the 80s and 90s logged into a computer somewhere else. It's also really
 great to seamlessly continue working the same way you're used to working when
 you have to context-switch onto another machine.
 
