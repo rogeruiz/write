@@ -44,6 +44,7 @@ task :create_post, [ :date, :title, :category ] do | b, args |
     post.puts "layout: post"
     post.puts "title: #{ args.title.titleize }"
     post.puts "date: \"#{ d.strftime "%FT%T%:z" }\""
+    post.puts "categories: [#{ c[ :name ] }]" if c[ :name ] == "works"
     post.puts "-" * 3
     post.close
     sh "cat #{ filepath }"
