@@ -36,7 +36,7 @@ task :create_post, [ :date, :title, :category ] do | b, args |
     c = { name: "writing", path: "_posts" }
   end
   headline "Creating a post with title #{ args.title } @ #{ d } categorized by #{ c[ :name ] }"
-  filename = "#{ d.strftime "%F" }-#{ args.title.dasherize }.markdown"
+  filename = "#{ d.strftime "%F" }-#{ args.title.dasherize.downcase! }.markdown"
   filepath = "#{ c[ :path ] }/#{ filename }"
   unless File.exists?( filepath )
     post = File.new( filepath, "w+" )
