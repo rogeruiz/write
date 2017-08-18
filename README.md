@@ -1,5 +1,9 @@
 # A place I come to when I want to write
 
+Info | Status
+--- | ---
+Build status | [![Build Status](https://travis-ci.org/rogeruiz/rogeruiz.github.io.svg?branch=master)](https://travis-ci.org/rogeruiz/rogeruiz.github.io)
+
 A personal hobby collection built on Jekyll and Github Pages. The intention of
 this project is to give myself a platform on which to publish ideas, opinions,
 critiques, and commentary on various topics. I also have a section of work I've
