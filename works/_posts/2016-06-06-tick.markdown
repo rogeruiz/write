@@ -1,0 +1,50 @@
+---
+layout: work
+title: Tick
+date: "2016-06-11T18:06:28-04:00"
+categories: [works]
+---
+
+<a href="https://github.com/rogeruiz/tick" target="_blank">
+  <strong>tl;dr:</strong>
+</a> Rust, SQLite
+
+![Tick Screenshot Help](/img/works/tick-screenshot-help.png)
+
+Tick is a time-tracking CLI tool written in Rust using SQLite as the data store.
+I use [a script][tux] called Tux to automate creating, attaching, detaching Tmux
+sessions.
+
+[tux]: https://github.com/rogeruiz/.files/blob/master/bin/tux
+
+I set out on a new learning journey to teach myself Rust. I didn't, and still
+don't, know many Rustaceans. But, the community seemed friendly enough that it
+allow me to jump into something so new and different without much hesitation.
+
+I hit many walls in my development of Tick, but after a year of working on it in
+my spare time I finally was able to [ship it as version 0.2.0][tick-ship]. I've
+been using it myself ever since. I really like how much faster it is than my
+previous time-tracking tool. I still have more features that I'm going to work
+into it in the future, but for now I'm in extended beta mode.
+
+[tick-ship]: http://github.com/rogeruiz/tick/releases/v0.2.0
+
+### Usage
+
+![Tick Screenshot Usage](/img/works/tick-screenshot-usage.png)
+
+```sh
+
+$ tick [ -v ] start --name my-timer [ --message "I can do the thing!" ]
+$ tick [ -v ] status
+$ tick [ -v ] stop --name my-timer [ --message "I did the thing!" ]
+$ tick [ -v ] stop [ --message "I did the thing!" ] # without a name argument stops the latest running timer
+$ tick [ -v ] list
+$ tick [ -v ] remove --id $( tick list | tail -1 | awk '{ print $1 }' ) # delete the latest timer by Timer ID
+```
+
+[Download the release for macOS][tick-macos], or [check out the source][tick-source]
+and build Tick for our platform of choice.
+
+[tick-macos]: https://github.com/rogeruiz/tick/releases/download/v0.2.0/tick-macos
+[tick-source]: https://github.com/rogeruiz/tick/
