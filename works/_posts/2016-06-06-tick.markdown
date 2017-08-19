@@ -43,6 +43,21 @@ $ tick [ -v ] list
 $ tick [ -v ] remove --id $( tick list | tail -1 | awk '{ print $1 }' ) # delete the latest timer by Timer ID
 ```
 
+> Note about first time you start using Tick.
+
+😑 There's a reason I didn't ship the base functionality as 1.0.0 as I would
+have preferred. The thing is, in order to create the database and run the
+initial migration you'll need to do a few things first.
+
+1. Set an environment variable called `$DATABASE_URL` as a path to a SQLite
+   database. I like to use, `~/.tick/db/main.db`.
+1. Clone the repository and install the `diesel_cli` from Cargo
+1. Run `diesel setup` from within the cloned repository to create the database
+   at the `$DATABASE_URL` path and run the necessary migrations.
+
+In a future version of Tick, this will all be either automatic or done by the
+user using `tick init`.
+
 [Download the release for macOS][tick-macos], or [check out the source][tick-source]
 and build Tick for our platform of choice.
 
