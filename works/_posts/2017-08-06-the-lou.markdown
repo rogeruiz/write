@@ -1,0 +1,25 @@
+---
+layout: post
+title: The Lou
+date: "2017-08-06T00:00:00+00:00"
+categories: [works]
+---
+
+
+<a href="https://rogeruiz.gitlab.io/thelou/" target="_blank">
+  <strong>tl;dr:</strong>
+</a> HTML, CSS, JS, Design, Ember
+
+![Desktop Screenshot](/img/works/thelou.png)
+
+I'm going to my first tech conference in September 2017 and it's gonna be [The
+Strange Loop][tsl]. This kind of one-off site is a meditation process I go
+through when I whenever I'm visiting a new city or locale.
+
+[tsl]: https://thestrangeloop.com
+
+The idea is that these sort of **list** projects are meditative because they
+have a clear beginning, middle, end life-cycle. They're also really helpful for
+paying down emotional labor before a long trip. They allow me to concentrate
+on a focused itinerary rather than be overwhelmed by a lot of different choices.
+It's also super helpful since these are small-scale programming exercises.
