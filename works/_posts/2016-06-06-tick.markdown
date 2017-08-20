@@ -12,26 +12,27 @@ categories: [works]
 ![Tick Screenshot Help](/img/works/tick-screenshot-help.png)
 
 Tick is a time-tracking CLI tool written in Rust using SQLite as the data store.
-I use [a script][tux] called Tux to automate creating, attaching, detaching Tmux
+I use [a script called Tux][tux] to automate creating, attaching, detaching Tmux
 sessions.
 
 [tux]: https://github.com/rogeruiz/.files/blob/master/bin/tux
 
 I set out on a new learning journey to teach myself Rust. I didn't, and still
 don't, know many Rustaceans. But, the community seemed friendly enough that it
-allow me to jump into something so new and different without much hesitation.
+allowed me to jump into something so new & different without any hesitation.
 
 I hit many walls in my development of Tick, but after a year of working on it in
-my spare time I finally was able to [ship it as version 0.2.0][tick-ship]. I've
-been using it myself ever since. I really like how much faster it is than my
-previous time-tracking tool. I still have more features that I'm going to work
-into it in the future, but for now I'm in extended beta mode.
+my spare time I finally was able to [ship it as version 0.2.0][tick-ship] 2017.
+I've been using it myself ever since. I really like how much faster it is than
+[my previous time-tracking tool][clocker]. I still have more features that I'm
+going to work into it in the future, but for now I'm in _extended beta mode_.
 
-[tick-ship]: http://github.com/rogeruiz/tick/releases/v0.2.0
+[tick-ship]: https://github.com/rogeruiz/tick/releases/v0.2.0
+[clocker]: https://github.com/substack/clocker
 
 ### Usage
 
-![Tick Screenshot Usage](/img/works/tick-screenshot-usage.png)
+![Tick Screenshot Usage]({{ site.Base}}/img/works/tick-screenshot-usage.png)
 
 ```sh
 
@@ -43,11 +44,11 @@ $ tick [ -v ] list
 $ tick [ -v ] remove --id $( tick list | tail -1 | awk '{ print $1 }' ) # delete the latest timer by Timer ID
 ```
 
-> Note about first time you start using Tick.
+#### Note about first time you start using Tick.
 
-😑 There's a reason I didn't ship the base functionality as 1.0.0 as I would
-have preferred. The thing is, in order to create the database and run the
-initial migration you'll need to do a few things first.
+> There's a reason I didn't ship the base functionality as 1.0.0 as I would
+> have preferred. The thing is, in order to create the database and run the
+> initial migration you'll need to do a few things first.
 
 1. Set an environment variable called `$DATABASE_URL` as a path to a SQLite
    database. I like to use, `~/.tick/db/main.db`.
@@ -55,11 +56,11 @@ initial migration you'll need to do a few things first.
 1. Run `diesel setup` from within the cloned repository to create the database
    at the `$DATABASE_URL` path and run the necessary migrations.
 
-In a future version of Tick, this will all be either automatic or done by the
+😑 In a future version of Tick, this will all be either automatic or done by the
 user using `tick init`.
 
 [Download the release for macOS][tick-macos], or [check out the source][tick-source]
 and build Tick for our platform of choice.
 
 [tick-macos]: https://github.com/rogeruiz/tick/releases/download/v0.2.0/tick-macos
-[tick-source]: https://github.com/rogeruiz/tick/
+[tick-source]: https://github.com/rogeruiz/tick
