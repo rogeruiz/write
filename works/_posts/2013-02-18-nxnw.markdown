@@ -5,7 +5,9 @@ date: "2013-06-18 22:14:00 -0400"
 categories: [works]
 ---
 
-<a href="http://rogeruiz.com/northwest-recommendations" target="_blank"><strong>tl;dr:</strong></a> HTML, CSS, JS, Design
+<a href="https://rogeruiz.gitlab.io/NXNW/" target="_blank">
+  <strong>tl;dr:</strong>
+</a> HTML, CSS, JS, Design
 
 ![Desktop Screenshot](/img/works/nxnw-desktop.png "North By Northwest Desktop")
 ![Mobile Screenshot](/img/works/nxnw-mobile.png "North By Northwest Mobile")

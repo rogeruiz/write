@@ -5,7 +5,9 @@ date: "2013-04-20 12:46:50 -0400"
 categories: [works]
 ---
 
-<a href="http://jetblue.com" rel="nofollow" target="_blank"><strong>tl;dr:</strong></a> HTML, CSS, JS, RequireJS
+<a href="http://jetblue.com" rel="nofollow" target="_blank">
+  <strong>tl;dr:</strong>
+</a> HTML, CSS, JS, RequireJS
 
 ![Desktop Screenshot](/img/works/jetblue.jpg "JetBlue Homepage")
 

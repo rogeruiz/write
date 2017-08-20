@@ -5,7 +5,9 @@ date: "2014-11-09 22:14:00 -0400"
 categories: [works]
 ---
 
-__tl;dr:__ Rails, VideoJS, Sass, JavaScript
+<a href="https://gist.github.com/rogeruiz/2c3fc8db3744c4e2c71e" target="_blank">
+  <strong>tl;dr:</strong>
+</a> Rails, VideoJS, Sass, JavaScript
 
 ![In-Video Subscribe Animation](/img/works/in-video-subscribe.gif "The Scene In-Video Subscribe Animation")
 

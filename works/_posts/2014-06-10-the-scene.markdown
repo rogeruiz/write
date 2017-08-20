@@ -5,7 +5,9 @@ date: "2014-06-10 22:14:00 -0400"
 categories: [works]
 ---
 
-<a href="https://thescene.com" rel="nofollow" target="_blank"><strong>tl;dr:</strong></a> Rails, MongoDB, Ember, Sass, Haml, CoffeeScript
+<a href="https://thescene.com" target="_blank" rel="nofollow">
+  <strong>tl;dr:</strong>
+</a> Ruby on Rails, MongoDB, Ember, Sass, Haml, CoffeeScript
 
 ![Desktop Screenshot](/img/works/the-scene.jpg "The Scene Homepage")
 
