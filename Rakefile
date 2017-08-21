@@ -22,6 +22,7 @@ end
 
 task :create_post, [ :date, :title, :category ] do | b, args |
   d = args.date ? DateTime.parse( args.date ) : DateTime.now()
+  layout_type = "post"
   unless args.title
     puts "A title is required to create a post"
     puts "e.g. rake #{ b }[,title-for-post]"
@@ -32,6 +33,7 @@ task :create_post, [ :date, :title, :category ] do | b, args |
     c = { name: "dress-code", path: "dress-code/_posts" }
   when "works", "w"
     c = { name: "works", path: "works/_posts" }
+    layout_type = "work"
   else
     c = { name: "writing", path: "_posts" }
   end
@@ -41,7 +43,7 @@ task :create_post, [ :date, :title, :category ] do | b, args |
   unless File.exists?( filepath )
     post = File.new( filepath, "w+" )
     post.puts "-" * 3
-    post.puts "layout: post"
+    post.puts "layout: #{ layout_type }"
     post.puts "title: #{ args.title.titleize }"
     post.puts "date: \"#{ d.strftime "%FT%T%:z" }\""
     post.puts "categories: [#{ c[ :name ] }]" if c[ :name ] == "works"
