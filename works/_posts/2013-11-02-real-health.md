@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: work
 title: "Real Health"
 date: "2013-11-02 13:00:00 -0400"
 categories: [works]

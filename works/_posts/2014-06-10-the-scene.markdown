@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: work
 title: "The Scene"
 date: "2014-06-10 22:14:00 -0400"
 categories: [works]

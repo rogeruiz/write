@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: work
 title: "In-Video Subscribe"
 date: "2014-11-09 22:14:00 -0400"
 categories: [works]

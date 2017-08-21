@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: work
 title: "Jetblue"
 date: "2013-04-20 12:46:50 -0400"
 categories: [works]
