@@ -2,7 +2,7 @@
 
 Info | Status
 --- | ---
-Build status | [![Build Status](https://travis-ci.org/rogeruiz/rogeruiz.github.io.svg?branch=master)](https://travis-ci.org/rogeruiz/rogeruiz.github.io)
+Build status | [![Build Status](https://travis-ci.org/rogeruiz/write.svg?branch=master)](https://travis-ci.org/rogeruiz/write)
 
 A personal hobby collection built on Jekyll and Github Pages. The intention of
 this project is to give myself a platform on which to publish ideas, opinions,
