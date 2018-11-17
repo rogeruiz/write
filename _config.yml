@@ -10,7 +10,7 @@ description: > # this means to ignore newlines until the next stanza.
 goodbye_message: >
   Thanks for stopping by. &#x1f44b;&#x1f3fd;
 baseurl: ""
-url: "http://write.rog.gr"
+url: "https://write.rog.gr"
 twitter_username: rogeruiz
 github_username: rogeruiz
 
