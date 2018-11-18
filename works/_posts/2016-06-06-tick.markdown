@@ -7,7 +7,7 @@ categories: [works]
 
 <a href="https://github.com/rogeruiz/tick" target="_blank">
   <strong>tl;dr:</strong>
-</a> Rust, SQLite
+</a> Rust, SQLite, Documentation
 
 ![Tick Screenshot Help](/img/works/tick-screenshot-help.png)
 
