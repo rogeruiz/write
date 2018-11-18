@@ -16,13 +16,7 @@ layout: default
   <h3>Latest Writing</h3>
   <ul class="post-list">
     {% for post in site.categories.writing limit:4 %}
-      <li>
-        <span class="post-meta highlight"><code>&#xf073;</code>{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+      {% include post_list_item.html post=post %}
     {% endfor %}
   </ul>
   <div class="cta-links highlight-anchors">
@@ -39,13 +33,7 @@ layout: default
   <h3>Latest Dress Code</h3>
   <ul class="post-list">
     {% for post in site.categories.dress-code limit:4 %}
-      <li>
-        <span class="post-meta highlight"><code>&#xf073;</code>{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+      {% include post_list_item.html post=post %}
     {% endfor %}
   </ul>
   <div class="cta-links highlight-anchors">
@@ -63,13 +51,7 @@ layout: default
   <h3>Latest Work</h3>
   <ul class="post-list">
     {% for post in site.categories.works limit:4 %}
-      <li>
-        <span class="post-meta highlight"><code>&#xf073;</code>{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+      {% include post_list_item.html post=post %}
     {% endfor %}
   </ul>
   <div class="cta-links highlight-anchors">

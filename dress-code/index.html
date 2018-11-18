@@ -10,12 +10,7 @@ title: Dress Code
   </div>
   <ul class="post-list">
     {% for post in site.categories.dress-code %}
-      <li>
-        <span class="post-meta highlight"><code>&#xf073;</code>{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+      {% include post_list_item.html post=post %}
     {% endfor %}
   </ul>
 
