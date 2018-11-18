@@ -1,0 +1,12 @@
+{% assign word = "posts" %}
+{% if counter >= 5 %}
+  {% assign counter = counter | minus: 4 %}
+  {% if counter < 2 %}
+    {% assign word = "post" %}
+  {% endif %}
+  <p>
+    <span class="post-meta highlight"><code>&#xf15c;</code></span>
+    <a href="{{ site.baseurl }}/writing/index.html">Read {{ counter }} more {{ word }}</a>
+  </p>
+{% endif %}
+
