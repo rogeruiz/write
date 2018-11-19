@@ -1,0 +1,14 @@
+---
+layout: work
+title: Tock
+date: "2018-01-22T00:00:00+00:00"
+categories: [works]
+---
+
+<a href="https://18f.gsa.gov/2015/05/21/tockingtime/" target="_blank">
+  <strong>tl;dr:</strong>
+</a> CI, CD, Release Management, DevOps, ATO/SO, Python, CSS, JS
+
+
+I worked on Tock and am the official System Owner for the Authority to Operate
+(ATO).
