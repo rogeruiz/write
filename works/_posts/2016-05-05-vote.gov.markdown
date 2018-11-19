@@ -1,0 +1,12 @@
+---
+layout: work
+title: vote.gov
+date: "2016-05-05T00:00:00+00:00"
+categories: [works]
+---
+
+<a href="https://vote.gov" target="_blank">
+  <strong>tl;dr:</strong>
+</a> CI, CD, Documentation, DNS, i18n, HTML, CSS, JS
+
+I worked on vote.gov.
