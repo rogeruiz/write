@@ -7,6 +7,21 @@ categories: [works]
 
 <a href="https://vote.gov" target="_blank">
   <strong>tl;dr:</strong>
-</a> CI, CD, Documentation, DNS, i18n, HTML, CSS, JS
+</a> CI, CD, Documentation, DNS, i18n, HTML, CSS, JS, Hugo, Gulp
 
-I worked on vote.gov.
+![Launch header image](/img/works/vote-gov.jpg "Vote.gov Header Image")
+
+I worked on vote.gov before the 2016 election. My main role on this project was
+to ensure the developer productivity and adherence to the US Web Design System.
+The site is built using a static-generator and an asset-pipeline to allow
+front-end focused engineers to leverage any compatible technologies that they
+need.
+
+As a native Spanish speaker, I also contributed to the translation on the site
+along with integrating i18n translation customization before it was
+fully-supported in upstream for the Hugo project.
+
+Also, since this was work I did while I was in public sector, [all of the work is
+open-sourced on GitHub][gh-link].
+
+[gh-link]: https://github.com/usagov/vote-gov "The vote.gov codebase on GitHub."
