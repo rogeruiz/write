@@ -7,8 +7,32 @@ categories: [works]
 
 <a href="https://18f.gsa.gov/2015/05/21/tockingtime/" target="_blank">
   <strong>tl;dr:</strong>
-</a> CI, CD, Release Management, DevOps, ATO/SO, Python, CSS, JS
+</a> CI, CD, Release Management, DevOps, Security, ATO/SO, Python, CSS, JS
 
+![Desktop screenshot](/img/works/tock.png "Tock screenshot")
 
-I worked on Tock and am the official System Owner for the Authority to Operate
-(ATO).
+### Description
+
+For most of my time at 18F I worked on Tock and eventually became the official
+[System Owner][so] for the [Authority to Operate (ATO)][ato] on the project.
+Being a System Owner means that I handle the responsibility of the whole stack
+of the application. This means working closely with auditors and contributors to
+ensure that the application is meeting all the necessary compliance and security
+controls.
+
+[ato]: https://csrc.nist.gov/glossary/term/authorization_to_operate "Definition of ATO."
+[so]: https://csrc.nist.gov/glossary/term/system_owner "Definition of System Owner."
+
+Documentation has been a large focus of this effort. I had to work with various
+team members in order to either write documentation to cover features or
+sometimes make the decision to remove features in order to keep the compliance
+level for the application at it's appropriate levels. My time on [cloud.gov][cg]
+has been very helpful because a lot of the compliance controls were things that
+I helped manage and build on top of the PaaS that Tock was deployed on.
+
+[cg]: https://cloud.gov/ "The cloud.gov landing page."
+
+Also, since this was work I did while I was in public sector, [all of the work is
+open-sourced on GitHub][gh-link].
+
+[gh-link]: https://github.com/18f/tock "The Tock codebase on GitHub."
