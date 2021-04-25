@@ -30,7 +30,6 @@ reviewing user contributions from outside of our team. With over 4k stargazers
 on GitHub, the project regularly gets a lot of traffic from folks needing help
 or contributing to the project.
 
-Also, since this was work I did while I was in public sector, [all of the work is
-open-sourced on GitHub][gh-link].
+[Here's all of the work open-sourced on GitHub][gh-link].
 
 [gh-link]: https://github.com/uswds/uswds "The USWDS codebase on GitHub."
