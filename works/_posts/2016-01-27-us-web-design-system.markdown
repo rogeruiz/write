@@ -9,6 +9,7 @@ categories: [works]
   <strong>tl;dr:</strong>
 </a> CI, CD, DevOps, Documentation, Research, HTML, CSS, JS
 
+![Desktop Cropped Screenshot](/img/works/uswds.png "USWDS Desktop Cropped Screenshot")
 
 The USWDS is a design system for the federal government. It was made to help
 developers within the U.S. government design and build fast, accessible,
@@ -28,3 +29,8 @@ Because the USWDS is also open-source software, I was regularly answering and
 reviewing user contributions from outside of our team. With over 4k stargazers
 on GitHub, the project regularly gets a lot of traffic from folks needing help
 or contributing to the project.
+
+Also, since this was work I did while I was in public sector, [all of the work is
+open-sourced on GitHub][gh-link].
+
+[gh-link]: https://github.com/uswds/uswds "The USWDS codebase on GitHub."
