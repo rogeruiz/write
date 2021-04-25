@@ -10,6 +10,9 @@ categories: [works]
 </a> CI, CD, Research, HTML, CSS, JS
 
 ![Desktop Screenshot](/img/works/federal-front-door.png "Federal Front Door Desktop Screenshot")
+
+### Description
+
 I worked on Federal Front Door research project. This website is considered a
 micro-site and helped citizens learn more about the research work Labs.USA.gov
 was conducting. Most of my work is in the asset pipeline and continuous

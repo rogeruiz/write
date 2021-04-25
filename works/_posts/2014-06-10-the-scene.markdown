@@ -11,5 +11,7 @@ categories: [works]
 
 ![Desktop Screenshot](/img/works/the-scene.jpg "The Scene Homepage")
 
+### Description
+
 In the summer of 2014, my team and I launched The Scene for CNÉ. It's an ambitious
 aggregate video site built with Ember on top of a Rails back-end.

@@ -12,6 +12,8 @@ categories: [works]
 
 ![Desktop Screenshot](/img/works/thelou.png)
 
+### Description
+
 I'm going to my first tech conference in September 2017 and it's gonna be [The
 Strange Loop][tsl]. This kind of one-off site is a meditation process I go
 through when I whenever I'm visiting a new city or locale.

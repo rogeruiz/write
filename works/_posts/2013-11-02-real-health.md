@@ -11,6 +11,8 @@ categories: [works]
 
 ![Desktop Screenshot](/img/works/real-health.jpg "Real Health Homepage")
 
+### Description
+
 Finding information on the ACA is difficult. This website helps by presenting a
 personal perspective about health insurance. Early on in the project, I helped
 establish that people would most likely be viewing this site on mobile devices.

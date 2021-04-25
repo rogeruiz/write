@@ -12,6 +12,8 @@ categories: [works]
 ![Desktop Screenshot](/img/works/nxnw-desktop.png "North By Northwest Desktop")
 ![Mobile Screenshot](/img/works/nxnw-mobile.png "North By Northwest Mobile")
 
+### Description
+
 I like to vacation in the Pacific Northwest from time-to-time. There is something
 in the air out there, and being 30-40 minutes away from a national park is a real
 treat. When I wasn't looking for nature, the bars and nightlife were pretty cool

@@ -11,6 +11,8 @@ categories: [works]
 
 ![Desktop Cropped Screenshot](/img/works/uswds.png "USWDS Desktop Cropped Screenshot")
 
+### Description
+
 The USWDS is a design system for the federal government. It was made to help
 developers within the U.S. government design and build fast, accessible,
 mobile-friendly government websites backed by user research.

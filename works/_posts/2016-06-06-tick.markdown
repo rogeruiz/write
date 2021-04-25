@@ -11,6 +11,8 @@ categories: [works]
 
 ![Tick Screenshot Help](/img/works/tick-screenshot-help.png)
 
+### Description
+
 Tick is a time-tracking CLI tool written in Rust using SQLite as the data store.
 I use [a script called Tux][tux] to automate creating, attaching, detaching Tmux
 sessions.

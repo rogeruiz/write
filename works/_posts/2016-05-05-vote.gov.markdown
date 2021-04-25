@@ -11,6 +11,8 @@ categories: [works]
 
 ![Launch header image](/img/works/vote-gov.jpg "Vote.gov Header Image")
 
+### Description
+
 I worked on vote.gov before the 2016 election. My main role on this project was
 to ensure the developer productivity and adherence to the US Web Design System.
 The site is built using a static-generator and an asset-pipeline to allow

@@ -11,6 +11,8 @@ categories: [works]
 
 ![In-Video Subscribe Animation](/img/works/in-video-subscribe.gif "The Scene In-Video Subscribe Animation")
 
+### Description
+
 Needing to increase the number of subscribers to The Scene. I implemented an
 in-video subscribe feature to our custom player to bring our subscriber-base up
 550% in the first 15 days of launch.
