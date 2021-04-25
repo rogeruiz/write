@@ -2,7 +2,6 @@
 #
 title: Roger is an engineer at HashiCorp
 email: contact@rog.gr
-phone: 804-539-2255
 description: > # this means to ignore newlines until the next stanza.
   I'm Roger Steve Ruiz. I contribute to Terraform Enterprise at
   [HashiCorp](https://www.hashicorp.com) building product-centered tooling
