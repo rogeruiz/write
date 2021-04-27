@@ -25,8 +25,8 @@ task :create_post, [ :date, :title, :category ] do | b, args |
   layout_type = "post"
   unless args.title
     puts "A title is required to create a post"
-    puts "e.g. rake #{ b }[,title-for-post]"
-    exit 99
+    puts "e.g. rake #{ b }[,Title for Post]"
+    exit 98
   end
   case args.category
   when "dress_code", "dress-code", "dc"
@@ -44,7 +44,7 @@ task :create_post, [ :date, :title, :category ] do | b, args |
     post = File.new( filepath, "w+" )
     post.puts "-" * 3
     post.puts "layout: #{ layout_type }"
-    post.puts "title: #{ args.title.titleize }"
+    post.puts "title: #{ args.title }"
     post.puts "date: \"#{ d.strftime "%FT%T%:z" }\""
     post.puts "categories: [#{ c[ :name ] }]" if c[ :name ] == "works"
     post.puts "-" * 3
