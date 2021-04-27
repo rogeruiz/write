@@ -11,7 +11,7 @@ end
 
 task :watch do
   headline "Watching for changes"
-  sh "bundle exec jekyll serve --incremental"
+  sh "bundle exec jekyll serve"
 end
 
 task :test do
