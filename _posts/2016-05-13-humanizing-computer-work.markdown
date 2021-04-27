@@ -22,7 +22,7 @@ So I considered it important to start doing this **publicly**.
     title="That face says all of the feelings with none of the time.">
 </a>
 
-I had found out about `lolcommits` from the [Meetup's Hack && Tell]
+I had found out about `lolcommits` from the [Meetup's Hack & Tell]
 [mu-hack-and-tell] in NYC back in 2011. I had been mesmerized by how simple the
 concept of tagging your likeness to a commit would make for better signing of
 commits than a GPG key. It made what I do on the computer more approachable.
