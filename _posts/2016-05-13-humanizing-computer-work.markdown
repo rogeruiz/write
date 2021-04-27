@@ -14,12 +14,7 @@ living-breathing family.
 
 So I considered it important to start doing this **publicly**.
 
-<a
-  href="https://rogerisworking.tumblr.com"
-  target="_blank"
-  title="See all the glorious public faces of me"
-  class="no-highlight"
-  >
+<a href="https://rogerisworking.tumblr.com" target="_blank" title="See all the glorious public faces of me" class="no-highlight">
   <img
     class="js-lol lol-animated"
     src="{{ site.baseurl }}/img/writing/tumblr_okt6kmINP21v08lzjo1_400.gif"
