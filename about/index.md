@@ -3,6 +3,10 @@ layout: page
 title: About
 ---
 
+![Roger static]({{ site.baseurl }}/img/about.png "Selfie")
+
+### About
+
 I am a self-taught software engineer that found my place in web development by
 coming in through the window, specifically the browser window. Coming from a
 traditional graphic design background, CSS and systems design were two things
@@ -11,25 +15,18 @@ history of and fundamentals of programming, I made my transition to full-stack
 web development with a strong focus on front-end, back-end, infrastructure,
 and automation.
 
-I view the projects I work on as umbrellas that cover or overlap many aspects of
-how people interact with the government. Whether it's interagency interactions
-like the [Open Opportunities platform] [openopps] or the [Federal Front Door]
-[ffd] welcoming civilians into necessary interactions with the government, I see
-the projects I am working on as a web that helps bring down walls around
-information or shed light into perceived black box processes. My main focus is
-on getting government agencies into the latest technologies and best practices
-with [cloud.gov][cg-home] and [Draft US Web Design Standards][uswds].
+I try to add elements of the emotional in a world of the artificial. We're all
+people who work on computers, or sometimes inside the computers e.g. cloud, and
+it is easy to forget that people at the end of the day are the ones using them.
+My career has taken me from the private sector to the public sector. I enjoy
+both kinds of work, although the latter I find has the most to improve on and
+biggest impact.
 
-[openopps]: https://github.com/18F/openopps-platform "Open Opportunities Github Repo"
-[ffd]: https://labs.usa.gov/ "Federal Front Door at USA.gov"
-[uswds]: https://standards.usa.gov/ "Draft US Web Design Standards"
-[cg-home]: https://cloud.gov/ "A Platform as a Service for government teams"
-
-After years of working in the advertising industry, I wanted a change that would
-make a real impact in the world with software and services. Instead of helping people
-click-through to more content or change a ad-specific communication preference,
-I want to change the way people get to interact with government services whether
-it's tools used by federal agencies or by the American people.
+Currently, my career path has me in more senior roles. I'm mostly focused on
+release engineering and building the necessary infrastructure and processes to
+help teams ship and iterate on software. I feel comfortable on-boarding on teams
+to better understand how to contribute. I find myself consistently working on a
+lot of different projects and being the glue interconnecting them.
 
 ### Experience
 <ul class="exp-list">
@@ -41,5 +38,3 @@ it's tools used by federal agencies or by the American people.
   </li>
   {% endfor %}
 </ul>
-
-<a class="no-highlight" href="http://rogerisworking.tumblr.com">![Roger animated]({{ site.baseurl }}/img/about-self.gif "Typos, fam...")</a>

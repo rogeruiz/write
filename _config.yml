@@ -1,11 +1,10 @@
 # Site settings
 #
-title: Roger is an engineer at HashiCorp
+title: Roger is an engineer
 email: contact@rog.gr
 description: > # this means to ignore newlines until the next stanza.
-  I'm Roger Steve Ruiz. I contribute to Terraform Enterprise at
-  [HashiCorp](https://www.hashicorp.com) building product-centered tooling
-  and features for on-premises focused folks.
+  I'm Roger Steve Ruiz. I contribute to open-source projects and am currently
+  taking a break. I am looking for opportunities, so if feel free to email me.
 goodbye_message: >
   Thanks for stopping by. &#x1f44b;&#x1f3fd;
 baseurl: ""
