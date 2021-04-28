@@ -7,24 +7,18 @@ categories: [works]
 
 <a href="https://rog.gr/scuttle" target="_blank">
   <strong>tl;dr:</strong>
-</a> CI, CD, Documentation, JS, HTML
+</a> CI, CD, Documentation, JS, HTML, Mermaid
 
 ![Desktop Screenshot](/img/works/scuttle-home.png)
 
 ### Description
 
-I built and continue to maintain Scuttle as an open source project.
+I built and continue to maintain Scuttle as an open source project. The idea
+behind Scuttle was to add the US Web Design System to the output of Mermaid
+diagrams. The regular output of Mermaid diagrams wasn't as visually pleasing as
+I wanted it to be and my work on [USWDS][uswds] was good enough for what I was
+trying to achieve here. I successfully implemented a Gulp plugin to process the
+Mermaid text kept in different files and adding it to the HTML file templates
+for each page.
 
----
-
-![Desktop Screenshot](/img/works/scuttle-cg-diagrams.png)
-
-### Description
-
-At work, Scuttle was so popular that folks on the [cloud.gov][cg] team were
-impressed enough to make it a part of the compliance documentation. With some
-minor tweaking, like a hand-crafted legend due to time constraints, the project
-was a success with the auditors. The diagrams are still available [at the
-official address for cloud.gov diagrams][cg-diagrams].
-
-[cg-diagrams]: https://diagrams.fr.cloud.gov "The cloud.gov diagrams documentation website."
+[uswds]: https://designsystem.digital.gov "A design system for the federal government."
