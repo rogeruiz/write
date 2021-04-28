@@ -1,0 +1,30 @@
+---
+layout: work
+title: Scuttle
+date: "2016-07-04T00:00:00+00:00"
+categories: [works]
+---
+
+<a href="https://rog.gr/scuttle" target="_blank">
+  <strong>tl;dr:</strong>
+</a> CI, CD, Documentation, JS, HTML
+
+![Desktop Screenshot](/img/works/scuttle-home.png)
+
+### Description
+
+I built and continue to maintain Scuttle as an open source project.
+
+---
+
+![Desktop Screenshot](/img/works/scuttle-cg-diagrams.png)
+
+### Description
+
+At work, Scuttle was so popular that folks on the [cloud.gov][cg] team were
+impressed enough to make it a part of the compliance documentation. With some
+minor tweaking, like a hand-crafted legend due to time constraints, the project
+was a success with the auditors. The diagrams are still available [at the
+official address for cloud.gov diagrams][cg-diagrams].
+
+[cg-diagrams]: https://diagrams.fr.cloud.gov "The cloud.gov diagrams documentation website."
