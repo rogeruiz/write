@@ -17,5 +17,9 @@
   <meta property="og:title" content="{% if page.title %}{{ " | Roger Steve Ruiz" | prepend: page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{{ site.og.description }}">
   <meta property="og:image" content="{{ "/img/og_image.png" | prepend: site.url }}" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="{{ site.twitter_username }}" />
+
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
 </head>
