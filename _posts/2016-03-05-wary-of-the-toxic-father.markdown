@@ -84,9 +84,9 @@ now. Almost two, two years old. This man walked back into his daughter's life,
 his daughter's open arms, her family's open arms after nearly 30 years of
 long-distance relationships. With 16 of those years physically far enough away
 from her that he began to take the shapes in [Seurat's *A Sunday Afternoon on
-the Island of La Grande Jatte*] [i-seurat] from afar but up close he revealed
+the Island of La Grande Jatte*][i-seurat] from afar but up close he revealed
 all of the jagged shapes, harsh dots, and scratch marks making up the face of [a
-mentally-ill Vincent van Gogh self-portrait] [i-van-gogh].
+mentally-ill Vincent van Gogh self-portrait][i-van-gogh].
 
 [i-seurat]: {{ site.url }}/img/seurat.jpg "A Sunday Afternoon on the Island of La Grande Jatte"
 [i-van-gogh]: {{ site.url }}/img/van-gogh.jpg "Self portrait"
