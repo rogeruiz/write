@@ -9,7 +9,7 @@ categories: [works]
   <strong>tl;dr:</strong>
 </a> HTML, CSS, JS, Twig, PHP, NodeJS
 
-![Desktop Screenshot](/img/works/real-health.jpg "Real Health Homepage")
+![Desktop Screenshot]({{ site.url }}/img/works/real-health.jpg "Real Health Homepage")
 
 ### Description
 

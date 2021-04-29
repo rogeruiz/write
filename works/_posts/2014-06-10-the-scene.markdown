@@ -9,7 +9,7 @@ categories: [works]
   <strong>tl;dr:</strong>
 </a> Ruby on Rails, MongoDB, Ember, Sass, Haml, CoffeeScript
 
-![Desktop Screenshot](/img/works/the-scene.jpg "The Scene Homepage")
+![Desktop Screenshot]({{ site.url }}/img/works/the-scene.jpg "The Scene Homepage")
 
 ### Description
 

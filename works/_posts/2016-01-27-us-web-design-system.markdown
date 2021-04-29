@@ -9,7 +9,7 @@ categories: [works]
   <strong>tl;dr:</strong>
 </a> CI, CD, DevOps, Documentation, Research, HTML, CSS, JS
 
-![Desktop Cropped Screenshot](/img/works/uswds.png "USWDS Desktop Cropped Screenshot")
+![Desktop Cropped Screenshot]({{ site.url }}/img/works/uswds.png "USWDS Desktop Cropped Screenshot")
 
 ### Description
 

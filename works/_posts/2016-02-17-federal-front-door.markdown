@@ -9,7 +9,7 @@ categories: [works]
   <strong>tl;dr:</strong>
 </a> CI, CD, Research, HTML, CSS, JS
 
-![Desktop Screenshot](/img/works/federal-front-door.png "Federal Front Door Desktop Screenshot")
+![Desktop Screenshot]({{ site.url }}/img/works/federal-front-door.png "Federal Front Door Desktop Screenshot")
 
 ### Description
 
