@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-![Roger static]({{ site.baseurl }}/img/about.png "Selfie")
+![Roger static]({{ site.url }}/img/about.png "Selfie")
 
 ### About
 

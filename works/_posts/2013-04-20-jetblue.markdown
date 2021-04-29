@@ -9,7 +9,7 @@ categories: [works]
   <strong>tl;dr:</strong>
 </a> HTML, CSS, JS, RequireJS
 
-![Desktop Screenshot](/img/works/jetblue.jpg "JetBlue Homepage")
+![Desktop Screenshot]({{ site.url }}/img/works/jetblue.jpg "JetBlue Homepage")
 
 ### Description
 

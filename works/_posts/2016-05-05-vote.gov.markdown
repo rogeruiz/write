@@ -9,7 +9,7 @@ categories: [works]
   <strong>tl;dr:</strong>
 </a> CI, CD, Documentation, DNS, i18n, HTML, CSS, JS, Hugo, Gulp
 
-![Launch header image](/img/works/vote-gov.jpg "Vote.gov Header Image")
+![Launch header image]({{ site.url }}/img/works/vote-gov.jpg "Vote.gov Header Image")
 
 ### Description
 

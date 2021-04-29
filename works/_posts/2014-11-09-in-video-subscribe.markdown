@@ -9,7 +9,7 @@ categories: [works]
   <strong>tl;dr:</strong>
 </a> Rails, VideoJS, Sass, JavaScript
 
-![In-Video Subscribe Animation](/img/works/in-video-subscribe.gif "The Scene In-Video Subscribe Animation")
+![In-Video Subscribe Animation]({{ site.url }}/img/works/in-video-subscribe.gif "The Scene In-Video Subscribe Animation")
 
 ### Description
 

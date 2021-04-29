@@ -88,8 +88,8 @@ the Island of La Grande Jatte*] [i-seurat] from afar but up close he revealed
 all of the jagged shapes, harsh dots, and scratch marks making up the face of [a
 mentally-ill Vincent van Gogh self-portrait] [i-van-gogh].
 
-[i-seurat]: {{ site.baseurl }}/img/seurat.jpg "A Sunday Afternoon on the Island of La Grande Jatte"
-[i-van-gogh]: {{ site.baseurl }}/img/van-gogh.jpg "Self portrait"
+[i-seurat]: {{ site.url }}/img/seurat.jpg "A Sunday Afternoon on the Island of La Grande Jatte"
+[i-van-gogh]: {{ site.url }}/img/van-gogh.jpg "Self portrait"
 
 I am not doing my best in raising my daughter. Not by a long shot. I know I
 could be better, but I am also *good enough*. I am present. I am focused. I am

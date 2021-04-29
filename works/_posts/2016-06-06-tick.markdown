@@ -9,7 +9,7 @@ categories: [works]
   <strong>tl;dr:</strong>
 </a> Rust, SQLite, Documentation
 
-![Tick Screenshot Help](/img/works/tick-screenshot-help.png)
+![Tick Screenshot Help]({{ site.url }}/img/works/tick-screenshot-help.png)
 
 ### Description
 
@@ -34,7 +34,7 @@ going to work into it in the future, but for now I'm in _extended beta mode_.
 
 ### Usage
 
-![Tick Screenshot Usage]({{ site.Base}}/img/works/tick-screenshot-usage.png)
+![Tick Screenshot Usage]({{ site.url }}/img/works/tick-screenshot-usage.png)
 
 ```sh
 

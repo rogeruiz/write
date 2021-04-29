@@ -23,7 +23,7 @@ layout: default
   <div class="cta-links highlight-anchors">
     {% include read_more.html counter=counter post_path=post_path %}
     <p>
-      You're welcome to <a href="{{ site.baseurl }}{{ post_path }}">read
+      You're welcome to <a href="{{ site.url }}{{ post_path }}">read
       more</a> of my personal writing and essays.
     </p>
   </div>
@@ -43,7 +43,7 @@ layout: default
     {% include read_more.html counter=counter %}
     <p>
         Not everything I like to write is cathartic. This is
-        <a href="{{ site.baseurl }}{{ post_path }}">my attempt
+        <a href="{{ site.url }}{{ post_path }}">my attempt
         to give back to either my future self or present day you.</a>
     </p>
       </div>
@@ -62,12 +62,12 @@ layout: default
   <div class="cta-links highlight-anchors">
     {% include read_more.html counter=counter post_path=post_path %}
     <p>
-      Anything I'm <a href="{{ site.baseurl }}{{ post_path }}">working
+      Anything I'm <a href="{{ site.url }}{{ post_path }}">working
       on or contributing to</a> that deserves more than just lip service ends
       up here. Animated gifs abound.
     </p>
   </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.url }}">via RSS</a></p>
 
 </div>

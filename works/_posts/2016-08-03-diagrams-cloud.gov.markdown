@@ -9,7 +9,7 @@ categories: [works]
   <strong>tl;dr:</strong>
 </a> CI, CD, Documentation, JS, HTML, Mermaid
 
-![Desktop Screenshot](/img/works/scuttle-cg-diagrams.png)
+![Desktop Screenshot]({{ site.url }}/img/works/scuttle-cg-diagrams.png)
 
 ### Description
 

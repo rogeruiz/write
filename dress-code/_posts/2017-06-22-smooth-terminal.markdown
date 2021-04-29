@@ -72,7 +72,7 @@ my kids ultimately decide that programming isn't a thing they're interested in
 then at least I have my purple color scheme and it's the thought that counts
 anyway.
 
-![Hopscotch in my terminal]({{ site.baseurl }}/img/dress-code/hopscotch-terminal.png)
+![Hopscotch in my terminal]({{ site.url }}/img/dress-code/hopscotch-terminal.png)
 
 [hopscotch-theme]: http://tmtheme-editor.herokuapp.com/#!/editor/theme/Hopscotch
 [hopscotch-app]: https://www.gethopscotch.com
@@ -88,7 +88,7 @@ inform which theme you'd like to chose. You can also download the file there and
 use them in a lot of popular editors or use it as a foundation to edit the
 source of a theme for your favorite text editor.
 
-![Hopscotch theme editor]({{ site.baseurl }}/img/dress-code/hopscotch-preview.png)
+![Hopscotch theme editor]({{ site.url }}/img/dress-code/hopscotch-preview.png)
 
 [tmtheme-editor]: http://tmtheme-editor.herokuapp.com
 
@@ -115,7 +115,7 @@ Once I discovered [the NerdFonts patcher][nerdfonts], I immediately patched my
 own M+ 2m font to use in iTerm. iTerms supports two different fonts for ASCII
 and non-ASCII text so those icons will look great next to your favorite font.
 
-![iTerm preference for text support]({{ site.baseurl }}/img/dress-code/iterm-preferences.png)
+![iTerm preference for text support]({{ site.url }}/img/dress-code/iterm-preferences.png)
 
 I used this and ran all the bits. It was a load of work, so maybe just pick
 something that's already patched. I didn't. I didn't because the particular font
@@ -133,7 +133,7 @@ It's a good place to let out your creative side out and it helps to understand
 typographic emphasis. And with my patched version of my favorite font with
 icons, I customized every last pixel on my PS1 prompt.
 
-![Terminal prompt example]({{ site.base_url }}/img/dress-code/terminal-prompt.png)
+![Terminal prompt example]({{ site.url }}/img/dress-code/terminal-prompt.png)
 
 Below are some excerpts from my modified _pure_ theme, real.
 

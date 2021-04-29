@@ -9,8 +9,8 @@ categories: [works]
   <strong>tl;dr:</strong>
 </a> HTML, CSS, JS, Design
 
-![Desktop Screenshot](/img/works/nxnw-desktop.png "North By Northwest Desktop")
-![Mobile Screenshot](/img/works/nxnw-mobile.png "North By Northwest Mobile")
+![Desktop Screenshot]({{ site.url }}/img/works/nxnw-desktop.png "North By Northwest Desktop")
+![Mobile Screenshot]({{ site.url }}/img/works/nxnw-mobile.png "North By Northwest Mobile")
 
 ### Description
 

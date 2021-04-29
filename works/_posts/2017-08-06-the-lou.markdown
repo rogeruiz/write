@@ -10,7 +10,7 @@ categories: [works]
   <strong>tl;dr:</strong>
 </a> HTML, CSS, JS, Design, Ember
 
-![Desktop Screenshot](/img/works/thelou.png)
+![Desktop Screenshot]({{ site.url }}/img/works/thelou.png)
 
 ### Description
 
