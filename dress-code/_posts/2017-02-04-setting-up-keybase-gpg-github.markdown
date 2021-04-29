@@ -19,7 +19,7 @@ using their copy of your public key to decrypt it.
 So, I had a [Keybase account][kb-profile] before the whole `[Verified]` thing on
 GitHub was on my radar. I didn't know much about it or how it would be something
 that I wanted to do for my workflow. I already considered [my
-selfies]({{ site.baseurl }}/writing/humanizing-computer-work.html) to be enough
+selfies]({% post_url 2016-05-13-humanizing-computer-work %}) to be enough
 to validate my identity. &#x1f61c;
 
 Let's walk through setting up [GitHub verified commits and tags][gh-gpg] with

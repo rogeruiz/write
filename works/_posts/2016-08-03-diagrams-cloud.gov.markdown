@@ -13,9 +13,9 @@ categories: [works]
 
 ### Description
 
-At work, Scuttle was so popular that folks on the [cloud.gov][cg] team were
-impressed enough to make it a part of the compliance documentation. With some
-minor tweaking, like a hand-crafted legend due to time constraints, the project
-was a success with the auditors.
+At work, [Scuttle]({% post_url works/2016-07-04-scuttle %}) was so popular that
+folks on the [cloud.gov][cg] team were impressed enough to make it a part of the
+compliance documentation. With some minor tweaking, like a hand-crafted legend
+due to time constraints, the project was a success with the auditors.
 
 [cg]: https://cloud.gov "The cloud.gov website"

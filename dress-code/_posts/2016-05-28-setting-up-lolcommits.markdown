@@ -36,7 +36,7 @@ customizing it. I personally use it to post everything I commit as a photo to a
 aspects of working with computers][humanizing-computer-work].
 
 [roger-is-working]: http://rogerisworking.tumblr.com/ "Roger Is Working"
-[humanizing-computer-work]: {{ site.baseurl }}/writing/humanizing-computer-work.html "Humanizing computer work"
+[humanizing-computer-work]: {% post_url 2016-05-13-humanizing-computer-work %} "Humanizing computer work"
 
 Feel free to skip around to any of the following sections.
 
