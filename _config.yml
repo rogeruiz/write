@@ -4,7 +4,7 @@ title: Roger is an engineer
 email: contact@rog.gr
 description: > # this means to ignore newlines until the next stanza.
   I'm Roger Steve Ruiz. I contribute to open-source projects and am currently
-  taking a break. I am looking for opportunities, so if feel free to email me.
+  taking a break. I am looking for opportunities, so feel free to email me.
 goodbye_message: >
   Thanks for stopping by. &#x1f44b;&#x1f3fd;
 baseurl: ""
@@ -15,7 +15,7 @@ github_username: rogeruiz
 og:
   description: >
     I'm Roger Steve Ruiz. I contribute to open-source projects and am currently
-    taking a break. I am looking for opportunities, so if feel free to email me.
+    taking a break. I am looking for opportunities, so feel free to email me.
 
 permalink: /:title.html
 
