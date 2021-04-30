@@ -86,5 +86,5 @@ Now that we have a list of directories, we can use a `for-loop` in Bash to
 iterate over all the directories. Once in the loop, we can run any arbitrary
 commands for the number of directories that exist. We also capture the current
 directory being iterated on in the `${dir}` variable. Also, note that the
-`${dir}` variable contains a trailing `/` character, so we omit it from the
-destination in the `cp` command.
+`${dir}` variable contains a trailing `/` character, so we omit the `config.yml`
+from the destination in the `cp` command.
