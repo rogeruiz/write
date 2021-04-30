@@ -1,6 +1,7 @@
 require 'html-proofer'
 require 'date'
 
+desc 'Runs test task by default.'
 task default: %w[test]
 
 def headline( title )
@@ -9,17 +10,20 @@ def headline( title )
   puts "=" * 80
 end
 
+desc 'Run the Jekyll server.'
 task :watch do
   headline "Watching for changes"
   sh "bundle exec jekyll serve"
 end
 
+desc 'Run the built site through the test suite.'
 task :test do
   headline "Checking `./_site` for any dead links."
   sh "bundle exec jekyll build"
   HTMLProofer.check_directory( "./_site", { :disable_external => true } ).run
 end
 
+desc 'Create a post with date, title, and category (date defaults to now if left blank).'
 task :create_post, [ :date, :title, :category ] do | b, args |
   d = args.date ? DateTime.parse( args.date ) : DateTime.now()
   layout_type = "post"
