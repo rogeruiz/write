@@ -4,72 +4,87 @@ title: Iterating Again and Again
 date: "2021-04-27T11:41:37-04:00"
 ---
 
-## Let's get started
+I sometimes find myself having to iterate across a bunch of directories.
+Usually, I have something to do in those directories like running an arbitrary
+command. There's a lot of different ways to do things, but for the sake of this
+example, we'll use `ls` to get the output of directories and iterate on them.
 
-{% highlight sh %}
-  ~/Developer/oss/rog.gr  master ▁▁▁▁▁▁▁▁▁▁▁▁▃▁█
-     for r in $(l ~/.lolcommits/ |
+In this example, I have a file I need to copy across multiple directories. It's
+a configuration file named `config.yml` that is adjacent to the directories I
+want to place it in.
 
-  ~/Developer/oss/rog.gr  master ▁▁▁▁▁▁▁▁▁▁▁▁▃▁█
-     l ~/.lolcommits
-.DS_Store                  .plugins           cf-recycle-plugin  cg-site  cg-style  cloud-foundry-cli  config.yml            docs-buildpacks  dotfiles  handbook      kubernetes-broker
-northwest-recommendations  openopps-platform  redis-3.2          repo     rog.gr    scuttle            staticfile-buildpack  thelou           tock      write.rog.gr
+```sh
+
+/some/folder
+├── folder1
+│  ├── some-other-file.txt
+│  └── config.yml
+├── folder2
+│  ├── some-other-file.txt
+│  └── config.yml
+├── config.yml <- # I want to copy this file into the other directories.
+├── carpeta1
+│  ├── algun-otro-archivo.txt
+│  └── config.yml
+├── carpeta2
+│  ├── algun-otro-archivo.txt
+│  └── config.yml
+```
 
-  ~/Developer/oss/rog.gr  master ▁▁▁▁▁▁▁▁▁▁▁▁▃▁█
-     l ~/.lolcommits -d
-/Users/rsr/.lolcommits
+You could open a GUI window and copy / paste the file across. But instead of
+doing things manually, let's have the computer do it for us. I'm going to break
+down my thought process of how I compose the loop to achieve this.
 
-  ~/Developer/oss/rog.gr  master ▁▁▁▁▁▁▁▁▁▁▁▁▃▁█
-     l -d ~/.lolcommits
-/Users/rsr/.lolcommits
+### Let's see what's inside the target directory
 
-  ~/Developer/oss/rog.gr  master ▁▁▁▁▁▁▁▁▁▁▁▁▃▁█
-     l -D ~/.lolcommits
-.plugins           cf-recycle-plugin  cg-site  cg-style  cloud-foundry-cli  docs-buildpacks       dotfiles  handbook  kubernetes-broker  northwest-recommendations
-openopps-platform  redis-3.2          repo     rog.gr    scuttle            staticfile-buildpack  thelou    tock      write.rog.gr
+```sh
+
+ls -p /some/folder
 
-  ~/Developer/oss/rog.gr  master ▁▁▁▁▁▁▁▁▁▁▁▁▃▁█
-     l -D ~/.lolcommits  | grep -v 'plugins'
-cf-recycle-plugin
-cg-site
-cg-style
-cloud-foundry-cli
-docs-buildpacks
-dotfiles
-handbook
-kubernetes-broker
-northwest-recommendations
-openopps-platform
-redis-3.2
-repo
-rog.gr
-scuttle
-staticfile-buildpack
-thelou
-tock
-write.rog.gr
+
+config.yml         carpeta1/          carpeta2/
+folder1/           folder2/
+```
 
-  ~/Developer/oss/rog.gr  master ▁▁▁▁▁▁▁▁▁▁▁▁▃▁█
-     for r in $(l -D ~/.lolcommits  | grep -v 'plugins'); do cp -v ~/.lolcommits/config.yml ~/.lolcommits/${r}/config.yml; done
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/cf-recycle-plugin/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/cg-site/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/cg-style/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/cloud-foundry-cli/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/docs-buildpacks/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/dotfiles/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/handbook/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/kubernetes-broker/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/northwest-recommendations/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/openopps-platform/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/redis-3.2/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/repo/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/rog.gr/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/scuttle/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/staticfile-buildpack/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/thelou/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/tock/config.yml
-/Users/rsr/.lolcommits/config.yml -> /Users/rsr/.lolcommits/write.rog.gr/config.yml
+With the `-p` flag on `ls`, we add a slash to any directories found. From the
+output above, you can see that we are including the `config.yml` file as well.
+We want to make sure we only include the directories and not the files we find.
+So let's try this again.
 
-  ~/Developer/oss/rog.gr  master ▁▁▁▁▁▁▁▁▁▁▁▁▃▁█
-     z write
-{% endhighlight %}
+### Let's use grep
+
+```sh
+
+ls -p /some/folder | grep -E '.+\/'
+
+
+carpeta1/          carpeta2/
+folder1/           folder2/
+```
+
+Using `grep` and a regular expression to match at least one character `.+`
+followed by a literal `/`. This gives us just the directories which we use `ls
+-p` to give a slash at the end.
+
+### Let's loop and copy
+
+```sh
+
+for dir in $(ls -p /some/folder | grep -E '.+\/')
+do
+  cp -v /some/folder/config.yml "/some/folder/${dir}"
+done
+
+
+/some/folder/config.yml -> /some/folder/folder1/config.yml
+/some/folder/config.yml -> /some/folder/folder2/config.yml
+/some/folder/config.yml -> /some/folder/carpeta1/config.yml
+/some/folder/config.yml -> /some/folder/carpeta2/config.yml
+```
+
+Now that we have a list of directories, we can use a `for-loop` in Bash to
+iterate over all the directories. Once in the loop, we can run any arbitrary
+commands for the number of directories that exist. We also capture the current
+directory being iterated on in the `${dir}` variable. Also, note that the
+`${dir}` variable contains a trailing `/` character, so we omit it from the
+destination in the `cp` command.
