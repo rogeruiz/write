@@ -16,12 +16,14 @@
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
   <meta property="og:title" content="{% if page.title %}{{ " | Roger Steve Ruiz" | prepend: page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{{ site.og.description }}">
-  <meta property="og:image" content="{{ "/img/og_image.png" | prepend: site.url }}" />
+  <meta property="og:image" content="{{ "/img/social_image.png" | prepend: site.url }}" />
 
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="{{ site.twitter_username }}" />
-  <meta name="twitter:image" content="{{ "apple-touch-icon-152x152.png" | prepend: site.url }}" />
-  <meta name="twitter:image:alt" content="The open-graph image for https://rog.gr/" />
+  <meta name="twitter:image" content="{{ "/img/social_image.png" | prepend: site.url }}" />
+  <meta name="twitter:image:alt" content="Hi, Roger is an engineer." />
+  <meta name="twitter:title" content="{% if page.title %}{{ " | Roger Steve Ruiz" | prepend: page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta name="twitter:description" content="{{ site.og.description }}">
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
 </head>
