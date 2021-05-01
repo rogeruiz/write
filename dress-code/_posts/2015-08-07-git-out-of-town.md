@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Git Out of Town"
-date: "2015-16-07 16:00:00 -0400"
+date: "2015-08-07T16:00:00-0400"
 ---
 
 Depending on how experienced you are with Git, you've either run into problems
