@@ -10,25 +10,6 @@ layout: default
   </div>
 
   {% assign counter = 0 %}
-  {% assign post_path = "/writing/index.html" %}
-  {% for post in site.categories.writing %}
-    {% assign counter = counter | plus: 1 %}
-  {% endfor %}
-  <h3>Latest Writing</h3>
-  <ul class="post-list">
-    {% for post in site.categories.writing limit:4 %}
-      {% include post_list_item.html post=post %}
-    {% endfor %}
-  </ul>
-  <div class="cta-links highlight-anchors">
-    {% include read_more.html counter=counter post_path=post_path %}
-    <p>
-      You're welcome to <a href="{{ site.url }}{{ post_path }}">read
-      more</a> of my personal writing and essays.
-    </p>
-  </div>
-
-  {% assign counter = 0 %}
   {% assign post_path = "/dress-code/index.html" %}
   {% for post in site.categories.dress-code %}
     {% assign counter = counter | plus: 1 %}
@@ -65,6 +46,25 @@ layout: default
       Anything I'm <a href="{{ site.url }}{{ post_path }}">working
       on or contributing to</a> that deserves more than just lip service ends
       up here. Animated gifs abound.
+    </p>
+  </div>
+
+  {% assign counter = 0 %}
+  {% assign post_path = "/writing/index.html" %}
+  {% for post in site.categories.writing %}
+    {% assign counter = counter | plus: 1 %}
+  {% endfor %}
+  <h3>Latest Writing</h3>
+  <ul class="post-list">
+    {% for post in site.categories.writing limit:4 %}
+      {% include post_list_item.html post=post %}
+    {% endfor %}
+  </ul>
+  <div class="cta-links highlight-anchors">
+    {% include read_more.html counter=counter post_path=post_path %}
+    <p>
+      You're welcome to <a href="{{ site.url }}{{ post_path }}">read
+      more</a> of my personal writing and essays.
     </p>
   </div>
 
