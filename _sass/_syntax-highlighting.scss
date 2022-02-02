@@ -11,6 +11,8 @@ pre, code { font-family: $ff-code; }
 .highlight {
   color: #FFFFFF;
   background-color: #231529;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px -2px $cl-tertiary-right;
 }
 .highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
   color: #6D6E70;
