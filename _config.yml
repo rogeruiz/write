@@ -40,13 +40,6 @@ kramdown:
 defaults:
   -
     scope:
-      path: ""
-      type: "posts"
-    values:
-      categories: [ "writing" ]
-      permalink: /writing/:title.html
-  -
-    scope:
       path: "dress-code"
       type: "posts"
     values:
