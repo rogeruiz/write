@@ -13,7 +13,7 @@ end
 desc 'Run the Jekyll server.'
 task :watch do
   headline "Watching for changes"
-  sh "bundle exec jekyll serve"
+  sh "bundle exec jekyll serve --port 4534"
 end
 
 desc 'Run the built site through the test suite.'
