@@ -71,7 +71,8 @@ filenames for any files that were changed. After `--name-only`, we are passing
 the two `<refname>` that we want to compare. In this case, it's `'HEAD@{1}'` and
 `HEAD` respectively. The `@{1}` means the previous value of `HEAD` that existed
 before the `git pull` took place. That particular `<refname>` is also quoted in
-single-quotes to prevent issues with the `@` at-sign and `{}` braces.
+single-quotes to prevent issues with the `@` at-sign and `{}` braces in the Bash
+script.
 
 ### Checking for changes
 
