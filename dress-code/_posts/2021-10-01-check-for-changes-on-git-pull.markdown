@@ -120,4 +120,4 @@ The options here are limited only by the files or directories that are changing
 in your repository. And as I mentioned earlier, this script exists locally on
 your machine. So even if your team leverages the `post-merge` hook for everyone,
 you can customize this script yourself and check for explicit changes to files
-and folders 
+and folders.
