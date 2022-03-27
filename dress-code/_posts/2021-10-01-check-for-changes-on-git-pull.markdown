@@ -51,7 +51,7 @@ if changed 'migrations/'; then
 fi
 ```
 
-The first think you'll notice is that we have a function called `changed` which
+The first thing you'll notice is that we have a function called `changed` which
 takes a single argument and uses that to search using `grep` through the output
 of `git diff` with some flags and options. Let's break those down to make sure
 we understand what's going on.
