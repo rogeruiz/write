@@ -65,6 +65,7 @@ will be more current and may be better at explaining things that my summary.
 
 [git-diff-docs]: https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---name-only
 [git-rev-parse]: https://git-scm.com/docs/git-rev-parse#Documentation/git-rev-parse.txt-emltrefnamegtltngtemegemmaster1em
+
 When you run `git diff` with the `--name-only` flag, you're asking for just the
 file names for any files that were changed. After `--name-only`, we are passing
 the two `<refname>` that we want to compare. In this case, it's `'HEAD@{1}'` and
