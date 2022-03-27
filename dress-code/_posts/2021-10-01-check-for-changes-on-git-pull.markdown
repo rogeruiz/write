@@ -36,11 +36,10 @@ cat .git/hooks/post-merge
 set -eo pipefail
 
 function changed {
-  local file_or_directory_search=$1
-  git diff --name-only 'HEAD@{1}' HEAD | grep "^${file_or_directory_search}" > /dev/null 2>&1
+  local chg_str=$1
+  git diff --name-only 'HEAD@{1}' HEAD | grep "^${chg_str}" > /dev/null 2>&1
 }
 
-# Check for changes in the `migrations/` directory.
 if changed 'migrations/'; then
   echo
   echo "🗄️ The migrations/ directory has changed. You may want to run \`make db_dev_migrate\`."
