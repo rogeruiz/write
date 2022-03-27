@@ -96,7 +96,7 @@ Now the example above shows that we're checking for a `mirgations/` directory to
 have changes in it. But we can easily add other `if-statements` to check for
 other common files or directories that have changed.
 
-### Check for changes in the `docs/` directory.
+### Check for changes in the _docs/adrs_ directory.
 
 ```sh
 if changed 'docs/adrs/'; then
@@ -106,7 +106,7 @@ fi
 
 ```
 
-### Check for changes of the `package.json` file.
+### Check for changes of the _package.json_ file.
 ```sh
 # if changed 'package.json'; then
   echo
