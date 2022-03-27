@@ -4,11 +4,13 @@ title: Check for changes on git pull
 date: "2021-10-01T00:00:00-05:00"
 ---
 
-When working on a large project with folks, it's a given that there will be
-things that work on their machine, or a fresh clone, but won't work on your
-current snapshot of the development environment. Things like keeping
-dependencies up to date and running local database migrations are examples of
-possible slippage that can lead to developer confusion or friction.
+Working on large projects with people means that you're going to be
+collaborating asynchronously a lot. Even with the best intentions, it can be
+difficult to track what's changed after pulling code down from your Git
+repository. Things like keeping dependencies up to date and running local
+database migrations are examples of possible slippage that can lead to developer
+confusion or friction. But other times, you may just need a reminder that some
+internal documentation has changed and that folks show read it.
 
 It's really helpful that whenever you do a `git pull`, you are given a list of
 files that change. But if you're not paying attention or that list of changes is
@@ -16,7 +18,10 @@ too long, you can get lost and forget to run certain things on your local
 machine. 
 
 With a `post-merge` Git hook, you can run an arbitrary number of commands
-whenever certain files or directories change.
+whenever certain files or directories change. These examples only run `echo`
+commands as it could be intrusive to run code on other's machines, but it's easy
+enough to run a command rather than only suggest running a command if you'd
+like. After all, the `post-merge` hook is a local Bash script.
 
 ## Anatomy of a post-merge hook
 
