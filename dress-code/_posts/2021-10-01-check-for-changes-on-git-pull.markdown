@@ -101,7 +101,7 @@ other common files or directories that have changed.
 ```sh
 if changed 'docs/adrs/'; then
   echo
-  echo "📄 The docs/adrs directory has changed. Please read the newest ADR changes."
+  echo "📄 The docs/adrs directory has changed. Please review any ADR changes."
 fi
 
 ```
