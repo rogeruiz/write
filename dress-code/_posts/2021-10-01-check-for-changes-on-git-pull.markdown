@@ -77,9 +77,9 @@ script.
 ### Checking for changes
 
 With a `changed` function, we're able to write `if-statements` with simple
-`strings` to check for the existence of a file's path at the beginning. This is
-mostly useful for checking directories. But the `changed` function can be
-changed to allow for checks of any of the output from the `git-diff` command.
+`strings` to check for the existence of a file in the output of the `git-diff`
+command. This is useful for checking both exact files and directories. But make
+sure you include the full path to a file if it's nested in a directory.
 
 ## Anatomy of a changed if-statement
 
