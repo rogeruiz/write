@@ -67,7 +67,7 @@ will be more current and may be better at explaining things that my summary.
 [git-rev-parse]: https://git-scm.com/docs/git-rev-parse#Documentation/git-rev-parse.txt-emltrefnamegtltngtemegemmaster1em
 
 When you run `git diff` with the `--name-only` flag, you're asking for just the
-file names for any files that were changed. After `--name-only`, we are passing
+filenames for any files that were changed. After `--name-only`, we are passing
 the two `<refname>` that we want to compare. In this case, it's `'HEAD@{1}'` and
 `HEAD` respectively. The `@{1}` means the previous value of `HEAD` that existed
 before the `git pull` took place. That particular `<refname>` is also quoted in
