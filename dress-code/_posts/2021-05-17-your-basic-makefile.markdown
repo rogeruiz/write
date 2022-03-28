@@ -46,7 +46,8 @@ Gists here][gist-makefile].
 
 directory = tmp
 
-# A loop that automatically runs to check if executables are in the $PATH variable before running any targets.
+# A loop that automatically runs to check if executables are in the $PATH
+# variable before running any targets.
 EXECUTABLES = echo mkdir npm yarn nc grep sort awk
 K := $(foreach exec,$(EXECUTABLES),\
         $(if $(shell command -v $(exec)),some string,$(error "No $(exec) executable in PATH")))
