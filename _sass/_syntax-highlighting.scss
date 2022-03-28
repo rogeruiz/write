@@ -6,6 +6,17 @@ pre, code { font-family: $ff-code; }
 
 // The code below was copied from this GitHub comment:
 // https://github.com/dracula/dracula-theme/issues/61#issuecomment-53153422
+a {
+  .language-plaintext {
+    text-decoration: underline;
+  }
+}
+.language-plaintext {
+  color: #f8f8f2;
+  background-color: #282a36;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px -2px $cl-tertiary-right;
+}
 .highlight .hll { background-color: #ffffcc; }
 .highlight { 
   background: #282a36; 
