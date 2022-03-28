@@ -3,7 +3,7 @@
 title: Roger is an engineer at TrussWorks
 email: contact@rog.gr
 description: > # this means to ignore newlines until the next stanza.
-  I'm Roger Steve Ruiz. I am an Engineer IV at [TrussWorks](https://truss.works)
+  I'm Roger Steve Ruiz. I am an L4 engineer at [TrussWorks](https://truss.works)
   building user-centered digital services.
 goodbye_message: >
   Thanks for stopping by. &#x1f44b;&#x1f3fd;
@@ -14,8 +14,8 @@ github_username: rogeruiz
 
 og:
   description: >
-    I'm Roger Steve Ruiz. I am an Engineer IV at TrussWorks
-    building user-centered digital services.
+    Hi, I'm Roger Steve Ruiz a software engineer who specializes in building
+    user-centered digital services for folks throughout the stack. 
 
 permalink: /:title.html
 
