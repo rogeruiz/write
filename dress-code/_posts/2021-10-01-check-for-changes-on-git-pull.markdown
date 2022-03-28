@@ -110,7 +110,7 @@ fi
 
 ### Check for changes of the _package.json_ file.
 ```sh
-# if changed 'package.json'; then
+if changed 'package.json'; then
   echo
   echo "🧰 The contents of package.json has changed. Run \`npm install\` or \`yarn\` to update your local dependencies."
 end
