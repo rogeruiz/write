@@ -10,20 +10,20 @@
   <link href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,900" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700,900" rel="stylesheet" type="text/css">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
 
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}" />
   <meta property="og:title" content="{% if page.title %}{{ " | Roger Steve Ruiz" | prepend: page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{{ site.og.description }}">
-  <meta property="og:image" content="{{ "/img/social_image.png" | prepend: site.url }}" />
+  <meta property="og:image" content="{{ "/img/social_image.png" | prepend: site.baseurl }}" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="{{ site.twitter_username }}" />
-  <meta name="twitter:image" content="{{ "/img/social_image.png" | prepend: site.url }}" />
+  <meta name="twitter:image" content="{{ "/img/social_image.png" | prepend: site.baseurl }}" />
   <meta name="twitter:image:alt" content="Hi, Roger is an engineer." />
   <meta name="twitter:title" content="{% if page.title %}{{ " | Roger Steve Ruiz" | prepend: page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta name="twitter:description" content="{{ site.og.description }}">
 
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
 </head>
