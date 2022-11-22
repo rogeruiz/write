@@ -25,3 +25,21 @@ this, but I can't promise anything.
 [➡️  Learn more about Gandi](https://www.gandi.net/)
 
 [➡️  The blog post on marco.org about domain registrars that introduced me to Gandi](https://marco.org/2011/04/14/why-is-it-so-hard-to-be-a-good-registrar)
+
+## Get the TF into version control
+
+The first major steps for me here was to get started and create a repository for
+the code. I use sourcehut for my open source development now. I've made the
+switch about a year ago. I love it. If you haven't checked out sourcehut yet, I
+recommend it. 
+
+[➡️  Checkout sourcehut](https://sr.ht/)
+
+I went ahead and started a repository from scratch with the intentions of
+writing Terraform code. The initial scaffolding here covers a license,
+documentation, tooling around documentation, and the bare Terraform that's
+required to exist to get started using the provider. It won't do anything, but
+it's the foundation you need.
+
+[➡️  Here's the commits so far](https://git.sr.ht/~rogeruiz/dns/log?from=1b314fe5ccf1d3e096b5f96c29406e8235d18e10#log-1b314fe5ccf1d3e096b5f96c29406e8235d18e10)
+
