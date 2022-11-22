@@ -41,7 +41,7 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
+ul, ol, dl, figure, details,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
@@ -69,6 +69,20 @@ figcaption {
     font-size: $small-font-size;
 }
 
+details {
+  border: 3px solid lighten(rgba($cl-tertiary-right, 0.75), 20%);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+summary {
+  cursor: pointer;
+  padding-bottom: 2rem;
+  &::marker {
+    display: inline;
+    content: "";
+  }
+}
 
 
 /**
@@ -122,7 +136,8 @@ a {
       box-shadow: none !important;
     }
 
-    .highlight-anchors p > & {
+    .highlight-anchors p > &,
+    .highlight-anchors summary > & {
       $l-color: lighten(rgba($cl-tertiary-right, 0.75), 20%);
       $l-spacing: 0.15em;
       display: inline;
