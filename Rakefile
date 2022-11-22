@@ -13,7 +13,7 @@ end
 desc 'Run the Jekyll server.'
 task :watch do
   headline "Watching for changes"
-  sh "bundle exec jekyll serve --port 4534"
+  sh "bundle exec jekyll serve --host 0.0.0.0 --port 4534"
 end
 
 desc 'Run the built site through the test suite.'
@@ -42,7 +42,7 @@ task :create_post, [ :date, :title, :category ] do | b, args |
     c = { name: "writing", path: "_posts" }
   end
   headline "Creating a post with title #{ args.title } @ #{ d } categorized by #{ c[ :name ] }"
-  filename = "#{ d.strftime "%F" }-#{ args.title.downcase.gsub(/\s/, '-') }.markdown"
+  filename = "#{ d.strftime "%F" }-#{ args.title.downcase.gsub(/\s/, '-') }.md"
   filepath = "#{ c[ :path ] }/#{ filename }"
   unless File.exists?( filepath )
     post = File.new( filepath, "w+" )
