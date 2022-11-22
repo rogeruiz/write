@@ -374,4 +374,19 @@ If you have more questions on this, you can get some answers from the official
 documentation soon. For now, go explore the codebase to see what the
 definitions for the other IDs are.
 
-[➡️  The Terraform import command](https://developer.hashicorp.com/terraform/cli/commands/import)
+## Running the plans and applies with safety
+
+With this provider in particular, it's great that DNS records get updated in
+place. As usual, Terraform will update or control parts of the infrastructure
+that it knows about leaving the rest of the infrastructure alone.
+
+Known issues around the Gandi API and the Terraform provider include setting a
+long value for `TXT` records. The solution seems to include escaped quotes in
+your DNS record values to prevent the Gandi API from splitting up the values. 
+
+[➡️  Remember to include escaped quotes in your TXT records to avoid running into this bug](https://github.com/go-gandi/terraform-provider-gandi/issues/40)
+
+I had minimal issues with the provider and I'm excited to manage more of my
+Gandi infrastructure with Terraform going forward. Thanks for making it this far
+and reading this. I hope it helps you understand more how to leverage Terraform
+to manage your DNS records with Gandi.
