@@ -5,7 +5,8 @@ date: "2022-11-21T19:39:58-05:00"
 ---
 
 > `tl;dr` Manage your Gandi DNS records via Terraform with open source tools and
-> free commercial products. 
+> free commercial products. Also, setup your repository for better documentation
+> writing with Vale.
 >
 > [🔗 code](https://git.sr.ht/~rogeruiz/dns)
 
