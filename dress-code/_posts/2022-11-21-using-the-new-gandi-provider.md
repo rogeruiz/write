@@ -316,3 +316,62 @@ You're welcome to do what you want with that `google-site-verification` value up
 there. But if it's not coming from my domain, then it's useless to you. As usual
 though, my threat model is not the same as yours. Always make sure you assess
 one for yourself and your situation.
+
+## Writing the Terraform
+
+Now the Terraform code for the using provider specifically is in my DNS
+repository. But, I'm going to include an example using the default DNS
+resources you'll need to import your _Gandi LiveDNS records_. You will probably
+want to import those into your Terraform state rather than creating them. But
+the Gandi provider will not delete or override _LiveDNS_ domains from your
+infrastructure. Some providers I've used do this.
+
+### Importing the infrastructure
+
+This part of the documentation for the provider is a little sparse. I'm working
+on figuring out how to contribute back to the provider repository to include
+some better examples but it easy to figure out from reading the source code as
+long as you're comfortable with Golang.
+
+```sh
+
+terraform import -h
+
+  
+Usage: terraform [global options] import [options] ADDR ID
+# shortened for brevity
+```
+
+[➡️  The Terraform import command](https://developer.hashicorp.com/terraform/cli/commands/import)
+
+When importing infrastructure via the Terraform CLI, you need to target the
+import with both an address and an identity. The address part is each to
+understand. It's the part of the code you write to create a resource. 
+
+```terraform
+resource "gandi_livedns_domain" "example" {
+  #                             ^ make sure you name this something memorable
+  name = "example.com"
+  #      ^ replace this with your domain
+}
+```
+
+This translates to the following command to import this into your Terraform
+state file. 
+
+```sh
+
+terraform import \
+  resource.gandi_livedns_domain.example \
+  example.com
+```
+
+As I said, the code for this is pretty straight forward to read. 
+
+[➡️  This is the line where the ID gets set to the name that's passed in](https://github.com/go-gandi/terraform-provider-gandi/blob/ed7469caaf82f873f82867e73aa179063f5ac23f/gandi/resource_livedns_domain.go#L57)
+
+If you have more questions on this, you can get some answers from the official
+documentation soon. For now, go explore the codebase to see what the
+definitions for the other IDs are.
+
+[➡️  The Terraform import command](https://developer.hashicorp.com/terraform/cli/commands/import)
