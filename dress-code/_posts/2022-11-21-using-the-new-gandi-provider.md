@@ -119,3 +119,160 @@ Note that this one uses the `write-good` package that I manually installed into
 a custom `.vale/styles` directory in the repository. Also note that the Vocab
 and the Styles are different directories to Vale. That's why line 8 above is a
 comment. I don't have custom styles but I do have custom spellings.
+
+## Get the TF state off my laptop
+
+It's important to securely store the Terraform state file even if it's on your
+machine. I like to get the TF state off of my machine, but I do this at work
+where someone else is paying for the secure storage. While it's convenient that
+Terraform uses local state storage by default I consider it an anti-pattern. But
+like I mentioned, cloud storage costs money. HashiCorp provides a free tier to
+their Terraform Cloud 
+
+You can still plan and work with your variables locally, but you can store your
+state file in your private account for free. There's more information about what
+you can do below.
+
+[➡️  Checkout the official documentation on Terraform Cloud Free Organizations](https://developer.hashicorp.com/terraform/cloud-docs/overview#free-organizations)
+
+The following code is a breakdown of the least amount of work I did before
+getting started with the Terraform CLI and logging into my new Terraform Cloud
+account.
+
+<details>
+<summary>
+<a href="https://git.sr.ht/~rogeruiz/dns/commit/1b314fe5ccf1d3e096b5f96c29406e8235d18e10">
+➡️  Here's the code
+</a> or click the non-highlighted part of this sentence to see it without leaving the page.
+</summary>
+
+{% highlight diff %}
+From 1b314fe5ccf1d3e096b5f96c29406e8235d18e10 Mon Sep 17 00:00:00 2001
+From: Roger Steve Ruiz <hi@rog.gr>
+Date: Mon, 21 Nov 2022 19:10:24 -0500
+Subject: [PATCH] Adding the Gandi Provider working;
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+I'm leveraging TF Cloud to store my state files as well here. It's a
+best practice, but it's certainly not entirely needed. Also, since
+departing from HashiCorp I had to create a new user since I can't access
+my Google account at HC anymore and my 2FA can't be disabled in order
+for me to reclaim my account. I hope HC appreciates it 😉.
+
+---
+ main.tf      | 15 +++++++++++++++
+ provider.tf  | 10 ++++++++++
+ variables.tf | 11 +++++++++++
+ 3 files changed, 36 insertions(+)
+ create mode 100644 main.tf
+ create mode 100644 provider.tf
+ create mode 100644 variables.tf
+
+diff --git a/main.tf b/main.tf
+new file mode 100644
+index 0000000..0c0465a
+--- /dev/null
++++ b/main.tf
+@@ -0,0 +1,15 @@
++terraform {
++  cloud {
++    organization = "gandi-dns"
++    workspaces {
++      name = "main"
++    }
++  }
++
++  required_providers {
++    gandi = {
++      source  = "go-gandi/gandi"
++      version = ">= 2.1.0"
++    }
++  }
++}
+diff --git a/provider.tf b/provider.tf
+new file mode 100644
+index 0000000..b280580
+--- /dev/null
++++ b/provider.tf
+@@ -0,0 +1,10 @@
++# The Gandi provider lives at:
++# https://github.com/go-gandi/terraform-provider-gandi
++
++# To make sure we don't expose things, let's leverage the `GANDI_KEY`
++# environment variable to replace the `key = ""` field in the provider
++# below.
++
++provider "gandi" {
++  key = var.gandi_api_key
++}
+diff --git a/variables.tf b/variables.tf
+new file mode 100644
+index 0000000..6ef37dc
+--- /dev/null
++++ b/variables.tf
+@@ -0,0 +1,11 @@
++variable "gandi_api_key" {
++  type        = string
++  description = "The Gandi API key from the Account Management screen"
++}
++
++# README: This is disabled as I'm not sure if I'll ever use it.
++# variable "gandi_sharing_id" {
++#   type        = string
++#   default     = ""
++#   description = "The Gandi Sharing ID to indicate the organization that will pay for any ordered products and to filter collections."
++# }
+
+-- 
+2.34.5
+{% endhighlight %}
+</details>
+
+Make sure you login to Terraform using the CLI after creating your Terraform
+Cloud account. I've shortened the CLI to `tf` with an alias. Once you've logged
+in, you can start using Terraform the way you expect to with a backend
+configuration such as AWS S3, but if you opt-in to remote execution you get a
+nice little web URL to track your plans and applies in the Terraform Cloud UI.
+
+[➡️  Learn more about Backend configuration for Terraform](https://developer.hashicorp.com/terraform/language/settings/backends/configuration)
+
+```sh
+
+tf login
+
+
+# login with your Terraform Cloud account.
+```
+
+Once you've logged into Terraform Cloud locally, the following Terraform will
+let you use it as your backend configuration. Learn more about it in the
+official docs above.
+
+```terraform
+terraform {
+  cloud {
+    organization = "your-free-organiation"
+    workspaces {
+      name = "your-free-workspace"
+    }
+  }
+}
+```
+[➡️  Sign up for Terraform Cloud](https://app.terraform.io/public/signup/account)
+
+### It doesn't just have to be the state
+
+While I choose to keep my secret variables and have my plans and applies execute
+locally, Terraform Cloud does off some benefits if you use the more mainstream
+version control systems. They don't support integrating with sourcehut, so I
+will be sticking to using my local machine to run things, but I do still
+appreciate having some secure storage for my state files behind a username and
+password.
+
+But it's nice that you can store environmental variables and sensitive
+variables you'd expect to put in a `terraform.tfvars` file. They also support a
+UI and remote execution for your Terraform commands. Not all commands, but most
+of the important ones. And if you do have a supported SCM system, then you have
+trigger builds whenever you push code to your repository.
