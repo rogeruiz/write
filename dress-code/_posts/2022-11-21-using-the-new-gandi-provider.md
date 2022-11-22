@@ -276,3 +276,43 @@ variables you'd expect to put in a `terraform.tfvars` file. They also support a
 UI and remote execution for your Terraform commands. Not all commands, but most
 of the important ones. And if you do have a supported SCM system, then you have
 trigger builds whenever you push code to your repository.
+
+## It's DNS
+
+As mentioned earlier, this is all about DNS. Specifically, it's about updating
+DNS records. I love this pattern of using Terraform to manage them as most DNS
+records are not considered sensitive information. But it's too common to keep
+these sort of records behind closed doors of an authenticated web UI. That means
+you will have to log in just to verify your DNS settings. It also means that you
+would need to share a screenshot or have someone log into your account to
+manage your DNS records. I like that you could just have people take a look at
+some code to verify that your DNS records are setup properly. There's a better
+way. And that way is configuring your DNS records via infrastructure as code.
+But since this is about a Terraform provider, we'll stick to Terraform-flavored
+IaC.
+
+### Security around DNS
+
+Are DNS records secure? I asked myself that a lot and found out that they
+aren't most of the time. It's possible that some things like an IP address or a
+URI is not public, but there is no real sensitive information. But consider the
+value of a `TXT` record. Those may look sensitive considering that sometimes
+you need to generate these to prove trust somewhere on the internet. But, these
+records are also tied to your domain as well and are accessible via `dig`
+commands.
+
+```sh
+
+dig +short rog.gr TXT
+#   |      |      ^ what's the type of DNS record.
+#   |      ^ what's the domain for the DNS record. 
+#   ^ just give me the value from the response instead of everything.
+
+
+"google-site-verification=IztwJSDmloiYJFmZU9U-oIl4VTX3fdTVcVbfIIB3PO8"
+```
+
+You're welcome to do what you want with that `google-site-verification` value up
+there. But if it's not coming from my domain, then it's useless to you. As usual
+though, my threat model is not the same as yours. Always make sure you assess
+one for yourself and your situation.
