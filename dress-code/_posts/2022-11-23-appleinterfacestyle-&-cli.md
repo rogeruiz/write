@@ -31,4 +31,10 @@ When I’m on the computer, I tend to work in Dark themes in my editor and termi
 > %Show my dark theme
 
 I use a lot of tools that subscribe to the Unix philosophy to varying degrees. For a Terminal I’ve used [iTerm2][iterm2] for almost a decade but I just switched to Alacritty. I recently switched from OhMyZSH to Starship for my command prompt. I used to use Vim but made the big leap to learn Lua and Neovim earlier this year. I’ve also made a big switch to Rust-based tools like Bat to get a different visual user experience compared to Cat. 
+
 [iterm2]: https://iterm2.com/
+## The configuration problem 
+
+My most used terminal throughout the years has been iTerm2. I love the customization and the attention to detail you find in the configuration. It’s a Mac-first application and does a good job of maintaining the HIG or allowing users to customize it further on their own. It’s all accessible with a very intuitive UI-based settings page. Configurations can even be exported and imported to XML files to make sharing them easy.
+
+> %Show the iTerm2 settings page
