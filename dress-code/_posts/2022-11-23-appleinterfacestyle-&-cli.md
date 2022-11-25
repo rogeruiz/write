@@ -23,3 +23,11 @@ Here’s an excerpt from the original authors.
 > *from Ken Thompson and Dennis Ritchie, key proponents of the Unix philosophy*
 
 Now the Unix philosophy is thrown around a lot. I recommend reading it every now and then. It’s historic information and the perspective gained from rereading it is super helpful. I’ve also learned that not many people are aware of the Unix philosophy by name. So I hope showing you how using macOS Night mode to trigger theme changes across multiple tools at once helps enforce parts of the Unix philosophy in modern times.
+## The visual problem
+
+When I’m on the computer, I tend to work in Dark themes in my editor and terminal. For me, these are the same things and expand further to tools like my multiplexer, command prompt framework, and TUI. The problems I experience are whenever I work outside during daylight hours it is almost impossible to work outside. My monitor on my laptop is glossy and turns into a reflective surface when my Dark themes are activated. 
+
+> %Show my dark theme
+
+I use a lot of tools that subscribe to the Unix philosophy to varying degrees. For a Terminal I’ve used [iTerm2][iterm2] for almost a decade but I just switched to Alacritty. I recently switched from OhMyZSH to Starship for my command prompt. I used to use Vim but made the big leap to learn Lua and Neovim earlier this year. I’ve also made a big switch to Rust-based tools like Bat to get a different visual user experience compared to Cat. 
+[iterm2]: https://iterm2.com/
