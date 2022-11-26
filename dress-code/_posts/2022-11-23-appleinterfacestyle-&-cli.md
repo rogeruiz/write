@@ -58,3 +58,11 @@ While I’ve used iTerm2 for so long, I did run in to various limitations. They 
 
 The Alacritty project has stated publicly that they’re looking to only recreate the terminal emulation experience and nothing else. That’s okay for me as I use Tmux to modify my terminal experience. But as usual, your mileage may vary. Explore your options. If Alacritty interests you then please keep reading. 
 
+## Next up, I said what I sed
+
+[➡️ The stream editor sed](https://manpages.org/sed)
+
+This little Unix program is the best. I love `sed` and that main point is because I learned regular expressions by learning Pearl. Editing text on the fly is so dope. This is how `sed` made its way into this solution. I hope it makes you realize the same thing. 
+
+> %Put a code block here of how to replace palettes by regular expression
+
