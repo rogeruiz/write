@@ -57,3 +57,4 @@ While I’ve used iTerm2 for so long, I did run in to various limitations. They 
 [➡️ Checkout my Alacritty configuration](https://git.sr.ht/~rogeruiz/.files/tree/main/item/alacritty/alacritty.yml)
 
 The Alacritty project has stated publicly that they’re looking to only recreate the terminal emulation experience and nothing else. That’s okay for me as I use Tmux to modify my terminal experience. But as usual, your mileage may vary. Explore your options. If Alacritty interests you then please keep reading. 
+
