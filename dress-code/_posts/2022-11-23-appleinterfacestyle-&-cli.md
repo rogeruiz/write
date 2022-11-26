@@ -49,3 +49,10 @@ Even though iTerm2 allows for exports and imports of configuration, the interfac
 >
 > *by Peter H. Salus in A Quarter-Century of Unix (1994)*
 
+### I had to stop using iTerm2 and start using Alacritty
+
+While I’ve used iTerm2 for so long, I did run in to various limitations. They were mostly around configuration management. There were times where I would make an update and I would have close and open the window for it to take effect. Other times, I would have to manually enter my theme and tweak my configuration using the UI editor. While all this worked for me for years, I needed to try something better. I switched to Alacritty and haven’t looked back. While it’s not as feature-rich as iTerm2 if you’re looking for lots of features, it does have a text-based configuration written in Yaml that updates the terminal on save.
+
+[➡️ Checkout my Alacritty configuration](https://git.sr.ht/~rogeruiz/.files/tree/main/item/alacritty/alacritty.yml)
+
+The Alacritty project has stated publicly that they’re looking to only recreate the terminal emulation experience and nothing else. That’s okay for me as I use Tmux to modify my terminal experience. But as usual, your mileage may vary. Explore your options. If Alacritty interests you then please keep reading. 
