@@ -64,5 +64,44 @@ The Alacritty project has stated publicly that they’re looking to only recreat
 
 This little Unix program is the best. I love `sed` and that main point is because I learned regular expressions by learning Pearl. Editing text on the fly is so dope. This is how `sed` made its way into this solution. I hope it makes you realize the same thing. 
 
-> %Put a code block here of how to replace palettes by regular expression
+```sh
+sed -E -i '' \
+	"s/^(colors: \*).+$/\1${current_mode}/" \
+	~/.alacritty.yml
+```
 
+Making sure that I capture the correct part of the key/value pair for what I’m editing I am able to set it to the `$current_mode` coming from the plist macOS sets when triggering Night Mode. 
+
+```sh
+sed -E -i '' \
+	"s/^(set.background = ).+$/\1\"${current_mode}\"/" \
+	~/.config/nvim/lua/theme.lua
+```
+
+```sh
+sed -E -i '' \
+	"s/^(palette = ).+$/\1\"${current_mode}\"/" \
+	~/.config/starship.toml
+```
+
+Now there can be an issues where maybe a different name needs to be set, and that’s okay too. It’s easy to just set another variable like `$catppuccin_flavour` and use it the same way. 
+
+```sh
+sed -E -i '' \
+	"s/^(set -g @catppuccin_flavour ).+$/\1'${catppuccin_flavour}'/" \
+	~/.tmux.conf
+# source the config so it forces reloaded
+tmux source-file ~/.tmux.conf
+```
+
+Since these configuration files all use the same text-based interface for configuring the theme, then I am able to use simple Unix tools to modify text and save the document. The `sed` tool is built for and great for just that. 
+
+With the `-E` flag, I’m able to run enhanced regular expressions. I do this because I need to run positional capture to match the key rather than the value since I don’t know what it will be. Or better said, I shouldn’t care what it is. I should care what I want it to be. I also need to make sure that I capture the rest of the text in the value after the key’s definition too with `.+$`. 
+
+Now since I used parentheses around the key and assignment operator (`=`, ` `, or `:`), I can then use `\1` to place it where it’s needed to set the correct value. 
+
+All this and it’s clear to see the values of using the Unix philosophy to manage the APIs between various tooling. 
+
+> The notion of "intricate and beautiful complexities" is almost an oxymoron. Unix programmers vie with each other for "simple and beautiful" honors — a point that's implicit in these rules, but is well worth making overt.
+>
+> *by Doug McIlroy in Eric Steven Raymond’s book **The Art of Unix Programming***. 
