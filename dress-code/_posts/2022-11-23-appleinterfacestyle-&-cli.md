@@ -20,7 +20,7 @@ Here’s an excerpt from the original authors.
 
 > Expect the output of every program to become the input to another, as yet unknown, program. Don’t clutter output with extraneous information. Avoid stringently columnar or binary input formats. Don’t insist on interactive input.
 > 
-> *from Ken Thompson and Dennis Ritchie, key proponents of the Unix philosophy*
+> *from Ken Thompson and Dennis Ritchie, key proponents of the Unix philosophy*.
 
 Now the Unix philosophy is thrown around a lot. I recommend reading it every now and then. It’s historic information and the perspective gained from rereading it is super helpful. I’ve also learned that not many people are aware of the Unix philosophy by name. So I hope showing you how using macOS Night mode to trigger theme changes across multiple tools at once helps enforce parts of the Unix philosophy in modern times.
 
@@ -48,7 +48,7 @@ Even though iTerm2 allows for exports and imports of configuration, the interfac
 
 > Write programs to handle text streams, because that is a universal interface.
 >
-> *by Peter H. Salus in A Quarter-Century of Unix (1994)*
+> *by Peter H. Salus in **A Quarter-Century of Unix** (1994).*
 
 ### I had to stop using iTerm2 and start using Alacritty
 
