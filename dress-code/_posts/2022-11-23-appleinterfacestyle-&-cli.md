@@ -66,7 +66,7 @@ customize it further on their own. It’s all accessible with an intuitive
 UI-based settings page. Configurations get exported and imported to XML
 files to make sharing them easy.
 
-> %Show the iTerm2 settings page
+![iTerm2 Colors Pane]({{ site.url }}/img/dress-code/iterm-color-preferences.png)
 
 ## Text-based configurations are better than proprietary ones
 
