@@ -46,7 +46,7 @@ when I work outside during daylight hours it's almost impossible to work
 outside. The display on my laptop is glossy and turns into a reflective surface
 when I use my Dark themes.
 
-> %Show my dark theme
+![My dark theme]({{ site.url }}/img/dress-code/my-dark-theme.png)
 
 I use a lot of tools that subscribe to the Unix philosophy to varying degrees.
 For a Terminal I’ve used [iTerm2][iterm2] for almost a decade but I switched to
