@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AppleInterfaceStyle & CLI
+title: AppleInterfaceStyle & TUI
 date: "2022-11-23T02:59:08-05:00"
 ---
 
