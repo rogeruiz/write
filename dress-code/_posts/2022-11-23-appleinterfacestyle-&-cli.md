@@ -4,7 +4,10 @@ title: AppleInterfaceStyle & CLI
 date: "2022-11-23T02:59:08-05:00"
 ---
 
-> `tl;dr` macOS-based Night mode supported scripting to modify the configuration across multiple development environment tools including: [Alacritty][alacritty], [Tmux][tmux], [Neovim][neovim], [Starship][starship], and [Bat][bat].
+> `tl;dr` macOS-based Night mode supported scripting to update the configuration
+> across different development environment tools including:
+> [Alacritty][alacritty], [Tmux][tmux], [Neovim][neovim], [Starship][starship],
+> and [Bat][bat].
 >
 > [🔗 code](https://git.sr.ht/~rogeruiz/.files/tree/main/item/bin/darwin/current_visual_mode)
 
