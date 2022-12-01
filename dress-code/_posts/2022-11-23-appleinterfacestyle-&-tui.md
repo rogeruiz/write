@@ -94,6 +94,9 @@ yet. While it's not as feature-rich as iTerm2 if you're looking for lots of
 features, it does have a text-based configuration written in Yaml that updates
 the terminal on save.
 
+<img src="{{ site.base_url }}/img/dress-code/alacritty-logo.png" alt="Alacritty
+logo" style="max-width: 150px; float: right; margin-left: 1.5rem;" />
+
 [➡️  Checkout my Alacritty configuration](https://git.sr.ht/~rogeruiz/.files/tree/main/item/alacritty/alacritty.yml)
 
 The Alacritty project has stated publicly that they're looking to recreate the
@@ -169,3 +172,44 @@ the APIs between various tooling.
 >
 > *by Doug McIlroy in Eric Steven Raymond's book **The Art of Unix
 > Programming***.
+
+## Let's make sure that the code runs on startup
+
+I have a script which I use to prompt me for what Shell I'd like to use. By
+default, I use ZSH with Tmux. I call this script `tux` which you can find in my
+dot files. Once I've created my custom script, I just had to make sure I called
+it from within my startup script. Below is a working example where I change
+between Light mode and Dark mode using nothing more than the macOS Display
+preference in the Menu Bar.
+
+![My terminal changing color themes]({{ site.base_url }}/img/dress-code/light-vs-dark-mode.gif)
+
+## The secret is using AppleInterfaceStyle
+
+I stumbled across the helpful project on GitHub called `plistwatch` which emits
+any changes to PLIST files on your system.
+
+[ ➡️  View the source code for `catilac/plistwatch` on GitHub](https://github.com/catilac/plistwatch)
+
+With this tool, I was able to see what property list (PLIST) value was getting
+set whenever my Mac transitioned between Light and Dark modes. The global value
+gets set by macOS with the keyword `Dark`. Using a simple If-Statement, I could
+set it like so.
+
+```bash
+if defaults read -g AppleInterfaceStyle &>/dev/null
+then
+  echo "Dark mode is on."
+else
+  echo "Light mode is on."
+fi
+```
+
+The reason it's a simple If-Else-Statement is because there are two modes. This
+could change in the future. Apple just writes `Dark` to the PLIST for
+`AppleInterfaceStyle` and then deletes it when macOS is in Light mode. 
+
+With this simple check, the CLI tool `sed`, and text-based configuration files,
+I was able to have my terminal and tools react to Light and Dark mode without
+needing to download or write much custom code. Cheers 🎉 for the Unix philosophy
+still proving useful in 2022.
