@@ -111,7 +111,7 @@ made me laugh when I realized what the acronym sounded like. F A R T. Editing
 text on the fly is so dope. This is how `sed` made its way into this solution. I
 hope it makes you realize the same thing.
 
-```sh
+```bash
 sed -E -i '' \
 	"s/^(colors: \*).+$/\1${current_mode}/" \
 	~/.alacritty.yml
@@ -121,13 +121,13 @@ Making sure that I capture the correct part of the key/value pair for what I’m
 editing I am able to set it to the `$current_mode` coming from the PLIST macOS
 sets when triggering Night Mode.
 
-```sh
+```bash
 sed -E -i '' \
 	"s/^(set.background = ).+$/\1\"${current_mode}\"/" \
 	~/.config/nvim/lua/theme.lua
 ```
 
-```sh
+```bash
 sed -E -i '' \
 	"s/^(palette = ).+$/\1\"${current_mode}\"/" \
 	~/.config/starship.toml
@@ -137,7 +137,7 @@ Now there can be an issues where maybe a different name gets used, and that’s
 okay too. It’s easy to just set another variable like `$catppuccin_flavour` and
 use it the same way.
 
-```sh
+```bash
 sed -E -i '' \
 	"s/^(set -g @catppuccin_flavour ).+$/\1'${catppuccin_flavour}'/" \
 	~/.tmux.conf
