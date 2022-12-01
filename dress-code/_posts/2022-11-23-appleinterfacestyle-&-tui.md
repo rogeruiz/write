@@ -46,7 +46,7 @@ when I work outside during daylight hours it's almost impossible to work
 outside. The display on my laptop is glossy and turns into a reflective surface
 when I use my Dark themes.
 
-![My dark theme]({{ site.url }}/img/dress-code/my-dark-theme.png)
+![My dark theme]({{ site.base_url }}/img/dress-code/my-dark-theme.png)
 
 I use a lot of tools that subscribe to the Unix philosophy to varying degrees.
 For a Terminal I've used [iTerm2][iterm2] for almost a decade but I switched to
@@ -66,7 +66,7 @@ customize it further on their own. It's all accessible with an intuitive
 UI-based settings page. Configurations get exported and imported to XML
 files to make sharing them easy.
 
-![iTerm2 Colors Pane]({{ site.url }}/img/dress-code/iterm-color-preferences.png)
+![iTerm2 Colors Pane]({{ site.base_url }}/img/dress-code/iterm-color-preferences.png)
 
 ## Text-based configurations are better than proprietary ones
 
