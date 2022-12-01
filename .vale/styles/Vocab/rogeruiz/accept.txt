@@ -12,3 +12,5 @@ Yaml
 Salus
 sed
 img
+url
+gif
