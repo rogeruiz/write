@@ -94,7 +94,7 @@ yet. While it’s not as feature-rich as iTerm2 if you’re looking for lots of
 features, it does have a text-based configuration written in Yaml that updates
 the terminal on save.
 
-[➡️ Checkout my Alacritty configuration](https://git.sr.ht/~rogeruiz/.files/tree/main/item/alacritty/alacritty.yml)
+[➡️  Checkout my Alacritty configuration](https://git.sr.ht/~rogeruiz/.files/tree/main/item/alacritty/alacritty.yml)
 
 The Alacritty project has stated publicly that they’re looking to recreate the
 terminal emulation experience and nothing else. That’s okay for me as I use Tmux
@@ -103,7 +103,7 @@ your options. If Alacritty interests you then please keep reading.
 
 ## Next up, I said what I sed
 
-[➡️ The stream editor sed](https://manpages.org/sed)
+[➡️  The stream editor `sed`](https://manpages.org/sed)
 
 This little Unix program is the best. I love `sed` and that might be because I
 learned regular expressions by learning Pearl and finding and replacing text
@@ -168,4 +168,4 @@ the APIs between various tooling.
 > point that's implicit in these rules, but is well worth making overt.
 >
 > *by Doug McIlroy in Eric Steven Raymond’s book **The Art of Unix
-> Programming***. 
+> Programming***.
