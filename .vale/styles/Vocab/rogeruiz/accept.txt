@@ -2,3 +2,13 @@
 sourcehut
 endhighlight
 tldr
+[A]lacritty
+[T]mux
+[N]eovim
+Starship
+Ritchie
+Lua
+Yaml
+Salus
+sed
+img
