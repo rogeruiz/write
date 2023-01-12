@@ -9,7 +9,7 @@ date: "2022-11-23T02:59:08-05:00"
 > [Alacritty][alacritty], [Tmux][tmux], [Neovim][neovim], [Starship][starship],
 > and [Bat][bat].
 >
-> [🔗 code](https://git.sr.ht/~rogeruiz/.files/tree/main/item/bin/darwin/current_visual_mode)
+> [🔗 code](https://git.sr.ht/~rogeruiz/.files/tree/main/item/dot_local/bin/darwin/executable_current_visual_mode)
 
 [alacritty]: https://alacritty.org/
 [tmux]: https://github.com/tmux/tmux/wiki
@@ -97,7 +97,7 @@ the terminal on save.
 <img src="{{ site.base_url }}/img/dress-code/alacritty-logo.png" alt="Alacritty
 logo" style="max-width: 150px; float: right; margin-left: 1.5rem;" />
 
-[➡️  Checkout my Alacritty configuration](https://git.sr.ht/~rogeruiz/.files/tree/main/item/alacritty/alacritty.yml)
+[➡️  Checkout my Alacritty configuration](https://git.sr.ht/~rogeruiz/.files/tree/main/item/dot_alacritty.yml)
 
 The Alacritty project has stated publicly that they're looking to recreate the
 terminal emulation experience and nothing else. That's okay for me as I use Tmux
